@@ -22,3 +22,5 @@ crash.log
 crash.*.log
 *_override.tf
 *_override.tf.json
+
+Изменено в Py Charm
