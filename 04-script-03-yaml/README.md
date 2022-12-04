@@ -43,7 +43,18 @@
 
 ### Ваш скрипт:
 ```
-???
+{ "info" : "Sample JSON output from our service\t",
+        "elements" :[
+            { "name" : "first",
+            "type" : "server",
+            "ip" : 7175
+            },
+            { "name" : "second",
+            "type" : "proxy",
+            "ip" : "71.78.22.43"
+            }
+        ]
+    }
 ```
 
 ---
@@ -54,22 +65,74 @@
 
 ### Ваш скрипт:
 ```python
-???
+import datetime as dt
+import socket
+import time
+import json
+import yaml
+
+host_adr = {
+    'drive.google.com': '0',
+    'mail.google.com': '0',
+    'google.com': '0'
+}
+
+for host in host_adr:
+    current_adr = socket.gethostbyname(host)
+    host_adr[host] = current_adr
+    with open(host + ".json", "w") as output_json:
+        data_json = json.dumps({host: host_adr[host]})
+        output_json.write(data_json)
+
+    with open(host + ".yaml", "w") as output_yaml:
+        data_yaml = yaml.dump([{host: host_adr[host]}])
+        output_yaml.write(data_yaml)
+
+while True:
+    for host in host_adr:
+        old_adr = host_adr[host]
+        new_adr = socket.gethostbyname(host)
+        if new_adr != old_adr:
+            host_adr[host] = new_adr
+            with open(host + ".json", "w") as output_json:
+                data_json = json.dumps({host: host_adr[host]})
+                output_json.write(data_json)
+
+            with open(host + ".yaml", "w") as output_yaml:
+                data_yaml = yaml.dump([{host: host_adr[host]}])
+                output_yaml.write(data_yaml)
+            print(str(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + " [ERROR] "+host+" IP mismatch: old IP "+old_adr+", new IP "+new_adr)
+        print(str(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + " " + host + " - " + host_adr[host])
+    print("~~~")
+    time.sleep(10)
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+~~~
+2022-12-04 16:10:03 drive.google.com - 173.194.222.194
+2022-12-04 16:10:03 mail.google.com - 142.251.1.17
+2022-12-04 16:10:03 google.com - 64.233.164.139
+~~~
+2022-12-04 16:10:13 drive.google.com - 173.194.222.194
+2022-12-04 16:10:13 mail.google.com - 142.251.1.17
+2022-12-04 16:10:13 [ERROR] google.com IP mismatch: old IP 64.233.164.139, new IP 64.233.162.113
+2022-12-04 16:10:13 google.com - 64.233.162.113
+~~~
 ```
 
 ### json-файл(ы), который(е) записал ваш скрипт:
 ```json
-???
+{"drive.google.com": "173.194.222.194"}
+{"google.com": "64.233.162.113"}
+{"mail.google.com": "142.251.1.17"}
 ```
 
 ### yml-файл(ы), который(е) записал ваш скрипт:
 ```yaml
-???
+- drive.google.com: 173.194.222.194
+- google.com: 64.233.162.113
+- mail.google.com: 142.251.1.17
 ```
 
 ---
