@@ -31,11 +31,11 @@ c = a + b
 
 ### Вопросы:
 
-| Вопрос  | Ответ |
-| ------------- | ------------- |
-| Какое значение будет присвоено переменной `c`?  | ???  |
-| Как получить для переменной `c` значение 12?  | ???  |
-| Как получить для переменной `c` значение 3?  | ???  |
+| Вопрос  | Ответ                                                                                     |
+| ------------- |-------------------------------------------------------------------------------------------|
+| Какое значение будет присвоено переменной `c`?  | TypeError: unsupported operand type(s) for +: 'int' and 'str', так как переменные a и b разных типов |
+| Как получить для переменной `c` значение 12?  | c = str(a) + b                                                                                       |
+| Как получить для переменной `c` значение 3?  | c = a + int(b)                                                                                       |
 
 ------
 
@@ -62,12 +62,21 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 ```python
-???
+#!/usr/bin/env python3
+
+import os
+
+bash_command = ["cd ./", "git status"]
+result_os = os.popen(' && '.join(bash_command)).read()
+for result in result_os.split('\n'):
+    if result.find('modified') != -1:
+        prepare_result = result.replace('\tmodified:   ', '')
+        print(prepare_result)
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+04-script-02-py/README.md
 ```
 
 ------
@@ -78,12 +87,41 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 ```python
-???
+#!/usr/bin/env python3
+
+import os
+import sys
+
+path = "./"
+if len(sys.argv) >= 2:
+    path = sys.argv[1]
+    if not os.path.isdir(path):
+        sys.exit("Каталог с репозиторием отсутствует: " + path)
+bash_command = ["cd " + path, "git status 2>&1"]
+git_command = ["git rev-parse --show-toplevel"]
+repo_path = os.popen(' && '.join(bash_command)).read()
+if repo_path.find('not a git') != -1:
+    sys.exit("не является репозиторием git: " + path)
+core_dir = (os.popen(' && '.join(git_command)).read())
+for full_path in repo_path.split('\n'):
+    if full_path.find('modified') != -1:
+        temp_path = full_path.replace('\tmodified:   ', '')
+        print(temp_path + core_dir)
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+С репозиторием в качестве параметра:
+C:\Python310\python.exe C:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology/1.py C:\Users\Dimi.DESKTOP-K8RTBSS\devops-netology
+04-script-02-py/README.mdD:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology/
+
+Без репозитория в параметре:
+C:\Python310\python.exe C:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology/1.py C:\Users\
+не является репозиторием git: C:\Users\
+
+Без параметра:
+C:\Python310\python.exe C:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology/1.py
+04-script-02-py/README.mdD:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology
 ```
 
 ------
@@ -103,12 +141,45 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 ```python
-???
+import socket
+import time
+import datetime as dt
+
+host_adr = {
+    'drive.google.com': '0',
+    'mail.google.com': '0',
+    'google.com': '0'
+}
+
+for host in host_adr:
+    current_adr = socket.gethostbyname(host)
+    host_adr[host] = current_adr
+
+
+while True:
+    for host in host_adr:
+        old_adr = host_adr[host]
+        new_adr = socket.gethostbyname(host)        
+        if new_adr != old_adr:
+            host_adr[host] = new_adr
+            print(str(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + " [ERROR] "+host+" IP mismatch: old IP "+old_adr+", new IP "+new_adr)
+        print(str(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")) + " " + host + " - " + host_adr[host])
+    print("~~~")
+    time.sleep(10)
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+C:\Python310\python.exe C:/Users/Dimi.DESKTOP-K8RTBSS/devops-netology/1.py
+2022-12-04 14:47:55 drive.google.com - 173.194.222.194
+2022-12-04 14:47:55 mail.google.com - 142.251.1.83
+2022-12-04 14:47:55 google.com - 64.233.164.100
+~~~
+2022-12-04 14:48:05 drive.google.com - 173.194.222.194
+2022-12-04 14:48:05 mail.google.com - 142.251.1.83
+2022-12-04 14:48:05 [ERROR] google.com IP mismatch: old IP 64.233.164.100, new IP 64.233.164.113
+2022-12-04 14:48:05 google.com - 64.233.164.113
+~~~
 ```
 
 ------
