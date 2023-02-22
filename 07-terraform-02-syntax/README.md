@@ -68,11 +68,87 @@ AWS предоставляет достаточно много бесплатн�
 В качестве результата задания предоставьте:
 1. Ответ на вопрос: при помощи какого инструмента (из разобранных на прошлом занятии) можно создать свой образ ami?
 1. Ссылку на репозиторий с исходной конфигурацией терраформа.  
- 
----
 
-### Как cдавать задание
+Конфиг Terraform \
+[main.tf](../terraform/07-terraform-02-syntax/src/main.tf) \
+[version.tf](../terraform/07-terraform-02-syntax/src/version.tf) \
+[outputs.tf](../terraform/07-terraform-02-syntax/src/outputs.tf)
 
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
+```bash
+vagrant@docker:~/cloud-terraform$ yc iam service-account create --name terradimi
+id: ajeb22eiuf8e0ugrulij
+folder_id: b1gn6do9flnmpvijh6jq
+created_at: "2023-02-20T19:21:03.543933190Z"
+name: terradimi
 
----
+vagrant@docker:~/cloud-terraform$ yc iam service-account --folder-id b1gn6do9flnmpvijh6jq list
++----------------------+-----------+
+|          ID          |   NAME    |
++----------------------+-----------+
+| ajeb22eiuf8e0ugrulij | terradimi |
++----------------------+-----------+
+```
+```bash
+root@docker:/home/vagrant/cloud-terraform# export YC_TOKEN=`yc iam create-token`
+root@docker:/home/vagrant/cloud-terraform# terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Reusing previous version of yandex-cloud/yandex from the dependency lock file
+- Using previously-installed yandex-cloud/yandex v0.85.0
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+root@docker:/home/vagrant/cloud-terraform# terraform apply -auto-approve
+
+
+Plan: 3 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + private_ip_address_terra-node = (known after apply)
+  + subnet_ip_address_terra-node  = (known after apply)
+yandex_vpc_network.terranet: Creating...
+yandex_vpc_network.terranet: Creation complete after 2s [id=enpqe0gd6ntsfffpoo91]
+yandex_vpc_subnet.terrasubnet: Creating...
+yandex_vpc_subnet.terrasubnet: Creation complete after 1s [id=e9bc5i7eb6j6jacmnqio]
+yandex_compute_instance.terra-node: Creating...
+yandex_compute_instance.terra-node: Still creating... [10s elapsed]
+yandex_compute_instance.terra-node: Still creating... [20s elapsed]
+yandex_compute_instance.terra-node: Still creating... [30s elapsed]
+yandex_compute_instance.terra-node: Still creating... [40s elapsed]
+yandex_compute_instance.terra-node: Still creating... [50s elapsed]
+yandex_compute_instance.terra-node: Creation complete after 59s [id=fhm57tn3g67iksjt5djj]
+
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+private_ip_address_terra-node = "51.250.94.127"
+subnet_ip_address_terra-node = "192.168.56.24"
+```
+```bash
+root@docker:/home/vagrant/cloud-terraform# terraform destroy -auto-approve
+Plan: 0 to add, 0 to change, 3 to destroy.
+
+Changes to Outputs:
+  - private_ip_address_terra-node = "51.250.94.127" -> null
+  - subnet_ip_address_terra-node  = "192.168.56.24" -> null
+yandex_compute_instance.terra-node: Destroying... [id=fhm57tn3g67iksjt5djj]
+yandex_compute_instance.terra-node: Still destroying... [id=fhm57tn3g67iksjt5djj, 10s elapsed]
+yandex_compute_instance.terra-node: Still destroying... [id=fhm57tn3g67iksjt5djj, 20s elapsed]
+yandex_compute_instance.terra-node: Destruction complete after 21s
+yandex_vpc_subnet.terrasubnet: Destroying... [id=e9bc5i7eb6j6jacmnqio]
+yandex_vpc_subnet.terrasubnet: Destruction complete after 3s
+yandex_vpc_network.terranet: Destroying... [id=enpqe0gd6ntsfffpoo91]
+yandex_vpc_network.terranet: Destruction complete after 0s
+
+Destroy complete! Resources: 3 destroyed.
+```
