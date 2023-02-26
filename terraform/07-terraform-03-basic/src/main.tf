@@ -35,7 +35,7 @@ resource "yandex_compute_instance" "vm-1-count" {
   }
 }
 
-resource "yandex_compute_instance" "vm-1-fe" {
+resource "yandex_compute_instance" "vm-1-foreach" {
   
   for_each = local.vm_foreach[terraform.workspace]
   name = "${terraform.workspace}-foreach-${each.key}"
