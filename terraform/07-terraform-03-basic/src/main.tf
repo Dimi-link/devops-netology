@@ -6,7 +6,7 @@ provider "yandex" {
 }
 
 resource "yandex_compute_instance" "vm-1-count" {
-
+  
   count = local.instance_count[terraform.workspace]
   name = "${terraform.workspace}-count-${count.index}"
 
@@ -29,14 +29,14 @@ resource "yandex_compute_instance" "vm-1-count" {
   metadata = {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
   }
-
+  
   lifecycle {
     create_before_destroy = true
   }
 }
 
-resource "yandex_compute_instance" "vm-1-for_each" {
-
+resource "yandex_compute_instance" "vm-1-fe" {
+  
   for_each = local.vm_foreach[terraform.workspace]
   name = "${terraform.workspace}-foreach-${each.key}"
 
@@ -47,7 +47,7 @@ resource "yandex_compute_instance" "vm-1-for_each" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd89ovh4ticpo40dkbvd"
+      image_id = "fd8p48mt3mentd2avl76"
     }
   }
 
@@ -59,11 +59,11 @@ resource "yandex_compute_instance" "vm-1-for_each" {
   metadata = {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
   }
-
+  
   lifecycle {
     create_before_destroy = true
   }
- }
+}
 
 resource "yandex_vpc_network" "network-1" {
   name = "network1"
@@ -95,7 +95,7 @@ locals {
       "3" = { cores = "2", memory = "2" },
       "2" = { cores = "2", memory = "2" }
     }
-        stage = {
+	stage = {
       "1" = { cores = "1", memory = "1" }
     }
   }
