@@ -279,8 +279,8 @@ Terraform will perform the following actions:
         }
     }
 
-  # yandex_compute_instance.vm-1-for_each["2"] will be created
-  + resource "yandex_compute_instance" "vm-1-for_each" {
+  # yandex_compute_instance.vm-1-foreach["2"] will be created
+  + resource "yandex_compute_instance" "vm-1-foreach" {
       + created_at                = (known after apply)
       + folder_id                 = (known after apply)
       + fqdn                      = (known after apply)
@@ -307,7 +307,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd89ovh4ticpo40dkbvd"
+              + image_id    = "fd8p48mt3mentd2avl76"
               + name        = (known after apply)
               + size        = (known after apply)
               + snapshot_id = (known after apply)
@@ -352,8 +352,8 @@ Terraform will perform the following actions:
         }
     }
 
-  # yandex_compute_instance.vm-1-for_each["3"] will be created
-  + resource "yandex_compute_instance" "vm-1-for_each" {
+  # yandex_compute_instance.vm-1-foreach["3"] will be created
+  + resource "yandex_compute_instance" "vm-1-foreach" {
       + created_at                = (known after apply)
       + folder_id                 = (known after apply)
       + fqdn                      = (known after apply)
@@ -380,7 +380,7 @@ Terraform will perform the following actions:
           + initialize_params {
               + block_size  = (known after apply)
               + description = (known after apply)
-              + image_id    = "fd89ovh4ticpo40dkbvd"
+              + image_id    = "fd8p48mt3mentd2avl76"
               + name        = (known after apply)
               + size        = (known after apply)
               + snapshot_id = (known after apply)
