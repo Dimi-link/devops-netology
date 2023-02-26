@@ -6,11 +6,7 @@ provider "yandex" {
 }
 
 resource "yandex_compute_instance" "vm-1-count" {
-<<<<<<< HEAD
   
-=======
-
->>>>>>> parent of 88e98ea (Delete main.tf)
   count = local.instance_count[terraform.workspace]
   name = "${terraform.workspace}-count-${count.index}"
 
@@ -33,23 +29,14 @@ resource "yandex_compute_instance" "vm-1-count" {
   metadata = {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
   }
-<<<<<<< HEAD
   
-=======
-
->>>>>>> parent of 88e98ea (Delete main.tf)
   lifecycle {
     create_before_destroy = true
   }
 }
 
-<<<<<<< HEAD
-resource "yandex_compute_instance" "vm-1-fe" {
+resource "yandex_compute_instance" "vm-1-foreach" {
   
-=======
-resource "yandex_compute_instance" "vm-1-for_each" {
-
->>>>>>> parent of 88e98ea (Delete main.tf)
   for_each = local.vm_foreach[terraform.workspace]
   name = "${terraform.workspace}-foreach-${each.key}"
 
@@ -60,11 +47,7 @@ resource "yandex_compute_instance" "vm-1-for_each" {
 
   boot_disk {
     initialize_params {
-<<<<<<< HEAD
       image_id = "fd8p48mt3mentd2avl76"
-=======
-      image_id = "fd89ovh4ticpo40dkbvd"
->>>>>>> parent of 88e98ea (Delete main.tf)
     }
   }
 
@@ -76,19 +59,11 @@ resource "yandex_compute_instance" "vm-1-for_each" {
   metadata = {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
   }
-<<<<<<< HEAD
   
   lifecycle {
     create_before_destroy = true
   }
 }
-=======
-
-  lifecycle {
-    create_before_destroy = true
-  }
- }
->>>>>>> parent of 88e98ea (Delete main.tf)
 
 resource "yandex_vpc_network" "network-1" {
   name = "network1"
@@ -120,11 +95,7 @@ locals {
       "3" = { cores = "2", memory = "2" },
       "2" = { cores = "2", memory = "2" }
     }
-<<<<<<< HEAD
 	stage = {
-=======
-        stage = {
->>>>>>> parent of 88e98ea (Delete main.tf)
       "1" = { cores = "1", memory = "1" }
     }
   }
