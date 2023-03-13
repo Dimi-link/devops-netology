@@ -1,0 +1,1871 @@
+clickhouse :) select * from logtest.mylogs;
+
+SELECT *
+FROM logtest.mylogs
+
+Query id: f3c1ded0-0f28-45d4-a653-9c08a859cf71
+
+┌─appname─────┬─facility─┬─hostname───┬─message───────────────────────────────────────────────────────────────────────────────────┬─msgid─┬─procid─┬─severity─┬───────────────timestamp─┬─version─┐
+│ ahmadajmi   │ syslog   │ we.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID268 │    846 │ debug    │ 2023-03-12 18:50:34.896 │       1 │
+│ meln1ks     │ local5   │ for.de     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID129 │   9456 │ crit     │ 2023-03-12 18:50:35.896 │       1 │
+│ ahmadajmi   │ news     │ up.com     │ Pretty pretty pretty good
+          │ ID824 │   2115 │ err      │ 2023-03-12 18:50:36.896 │       1 │
+│ meln1ks     │ kern     │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID709 │   9829 │ warning  │ 2023-03-12 18:50:37.896 │       2 │
+│ shaneIxD    │ local7   │ random.org │ Pretty pretty pretty good
+          │ ID534 │   4497 │ info     │ 2023-03-12 18:50:38.895 │       1 │
+│ benefritz   │ alert    │ make.de    │ Pretty pretty pretty good
+          │ ID899 │   9394 │ err      │ 2023-03-12 18:50:39.896 │       2 │
+│ ahmadajmi   │ ntp      │ we.net     │ #hugops to everyone who has to deal with this
+          │ ID890 │   3715 │ crit     │ 2023-03-12 18:50:40.896 │       2 │
+│ Karimmove   │ local5   │ make.net   │ #hugops to everyone who has to deal with this
+          │ ID285 │   6737 │ notice   │ 2023-03-12 18:50:41.896 │       1 │
+│ devankoshal │ audit    │ up.us      │ Maybe we just shouldn't use computers
+          │ ID36  │   7566 │ debug    │ 2023-03-12 18:50:42.895 │       1 │
+│ benefritz   │ daemon   │ we.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID803 │   7530 │ debug    │ 2023-03-12 18:50:43.896 │       1 │
+│ ahmadajmi   │ local0   │ for.net    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID502 │   2914 │ emerg    │ 2023-03-12 18:50:44.896 │       1 │
+│ ahmadajmi   │ local1   │ up.com     │ #hugops to everyone who has to deal with this
+          │ ID762 │    660 │ alert    │ 2023-03-12 18:50:45.896 │       2 │
+│ devankoshal │ clockd   │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID643 │   3629 │ warning  │ 2023-03-12 18:50:46.896 │       1 │
+│ meln1ks     │ news     │ up.com     │ There's a breach in the warp core, captain
+          │ ID426 │   2075 │ alert    │ 2023-03-12 18:50:47.896 │       2 │
+│ meln1ks     │ local4   │ names.org  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID745 │   7772 │ warning  │ 2023-03-12 18:50:48.896 │       2 │
+│ Karimmove   │ lpr      │ we.com     │ Take a breath, let it go, walk away
+          │ ID945 │   1897 │ warning  │ 2023-03-12 18:50:49.896 │       1 │
+│ shaneIxD    │ audit    │ we.de      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID620 │   1325 │ info     │ 2023-03-12 18:50:50.896 │       1 │
+│ Karimmove   │ syslog   │ we.com     │ Pretty pretty pretty good
+          │ ID192 │   4841 │ notice   │ 2023-03-12 18:50:51.902 │       1 │
+│ meln1ks     │ news     │ make.de    │ We're gonna need a bigger boat
+          │ ID659 │   8722 │ err      │ 2023-03-12 18:50:52.895 │       2 │
+│ benefritz   │ alert    │ some.org   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID70  │   7829 │ info     │ 2023-03-12 18:50:53.896 │       1 │
+│ benefritz   │ local7   │ up.net     │ You're not gonna believe what just happened
+          │ ID109 │   8879 │ emerg    │ 2023-03-12 18:50:54.896 │       1 │
+│ ahmadajmi   │ local5   │ we.us      │ Take a breath, let it go, walk away
+          │ ID188 │   2559 │ alert    │ 2023-03-12 18:50:55.896 │       1 │
+│ devankoshal │ local0   │ names.com  │ You're not gonna believe what just happened
+          │ ID85  │    570 │ err      │ 2023-03-12 18:50:56.897 │       1 │
+│ meln1ks     │ audit    │ names.de   │ Pretty pretty pretty good
+          │ ID906 │   3070 │ emerg    │ 2023-03-12 18:50:57.895 │       1 │
+│ benefritz   │ uucp     │ make.org   │ You're not gonna believe what just happened
+          │ ID930 │   6883 │ err      │ 2023-03-12 18:50:58.904 │       2 │
+│ jesseddy    │ clockd   │ up.us      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID412 │   8931 │ emerg    │ 2023-03-12 18:50:59.896 │       1 │
+│ ahmadajmi   │ user     │ make.net   │ Maybe we just shouldn't use computers
+          │ ID728 │   1109 │ crit     │ 2023-03-12 18:51:00.896 │       2 │
+│ benefritz   │ authpriv │ we.de      │ Pretty pretty pretty good
+          │ ID227 │   5143 │ notice   │ 2023-03-12 18:51:01.902 │       2 │
+│ ahmadajmi   │ auth     │ make.de    │ Pretty pretty pretty good
+          │ ID304 │   7910 │ debug    │ 2023-03-12 18:51:02.895 │       2 │
+│ devankoshal │ daemon   │ make.de    │ Pretty pretty pretty good
+          │ ID564 │   1066 │ err      │ 2023-03-12 18:51:03.896 │       1 │
+│ meln1ks     │ lpr      │ up.com     │ #hugops to everyone who has to deal with this
+          │ ID604 │   5753 │ warning  │ 2023-03-12 18:51:04.896 │       2 │
+│ meln1ks     │ kern     │ we.com     │ Pretty pretty pretty good
+          │ ID506 │   8289 │ debug    │ 2023-03-12 18:51:05.895 │       2 │
+│ Karimmove   │ local4   │ up.net     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID408 │   4931 │ emerg    │ 2023-03-12 18:51:06.895 │       1 │
+│ jesseddy    │ audit    │ random.net │ Pretty pretty pretty good
+          │ ID40  │   6493 │ emerg    │ 2023-03-12 18:51:07.897 │       1 │
+│ benefritz   │ local0   │ for.com    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID538 │   5789 │ emerg    │ 2023-03-12 18:51:08.896 │       1 │
+│ ahmadajmi   │ local4   │ make.de    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID253 │    184 │ debug    │ 2023-03-12 18:51:09.896 │       1 │
+│ meln1ks     │ authpriv │ names.de   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID777 │   1116 │ crit     │ 2023-03-12 18:51:10.896 │       1 │
+│ jesseddy    │ local5   │ names.net  │ There's a breach in the warp core, captain
+          │ ID565 │   8977 │ emerg    │ 2023-03-12 18:51:11.896 │       2 │
+│ benefritz   │ user     │ we.de      │ You're not gonna believe what just happened
+          │ ID766 │   5729 │ debug    │ 2023-03-12 18:51:12.900 │       1 │
+│ ahmadajmi   │ lpr      │ up.org     │ You're not gonna believe what just happened
+          │ ID704 │   4139 │ alert    │ 2023-03-12 18:51:13.907 │       2 │
+│ Karimmove   │ local0   │ we.de      │ Maybe we just shouldn't use computers
+          │ ID811 │   7976 │ warning  │ 2023-03-12 18:51:14.976 │       1 │
+│ shaneIxD    │ cron     │ we.net     │ Pretty pretty pretty good
+          │ ID510 │   9308 │ debug    │ 2023-03-12 18:51:15.896 │       1 │
+│ Karimmove   │ local0   │ for.com    │ There's a breach in the warp core, captain
+          │ ID760 │   5781 │ debug    │ 2023-03-12 18:51:16.896 │       2 │
+│ Karimmove   │ lpr      │ names.us   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID940 │   2294 │ err      │ 2023-03-12 18:51:17.896 │       2 │
+│ jesseddy    │ lpr      │ we.com     │ #hugops to everyone who has to deal with this
+          │ ID491 │   9261 │ emerg    │ 2023-03-12 18:51:18.896 │       1 │
+│ jesseddy    │ ntp      │ up.org     │ We're gonna need a bigger boat
+          │ ID662 │   7867 │ info     │ 2023-03-12 18:51:19.896 │       1 │
+│ devankoshal │ mail     │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID900 │   5514 │ warning  │ 2023-03-12 18:51:20.896 │       2 │
+│ jesseddy    │ authpriv │ some.us    │ Pretty pretty pretty good
+          │ ID942 │    146 │ info     │ 2023-03-12 18:51:21.895 │       2 │
+│ ahmadajmi   │ alert    │ for.de     │ You're not gonna believe what just happened
+          │ ID744 │   6286 │ crit     │ 2023-03-12 18:51:22.896 │       2 │
+│ ahmadajmi   │ clockd   │ some.org   │ #hugops to everyone who has to deal with this
+          │ ID275 │   3995 │ info     │ 2023-03-12 18:51:23.896 │       2 │
+│ ahmadajmi   │ mail     │ random.de  │ Take a breath, let it go, walk away
+          │ ID634 │   8415 │ alert    │ 2023-03-12 18:51:24.896 │       1 │
+│ benefritz   │ local5   │ up.org     │ Maybe we just shouldn't use computers
+          │ ID811 │   6556 │ crit     │ 2023-03-12 18:51:25.896 │       2 │
+│ devankoshal │ local5   │ names.us   │ Pretty pretty pretty good
+          │ ID747 │   3475 │ alert    │ 2023-03-12 18:51:26.896 │       2 │
+│ meln1ks     │ local0   │ names.org  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID380 │   3529 │ debug    │ 2023-03-12 18:51:27.896 │       2 │
+│ meln1ks     │ local1   │ up.de      │ #hugops to everyone who has to deal with this
+          │ ID465 │   3412 │ err      │ 2023-03-12 18:51:28.898 │       1 │
+│ meln1ks     │ local3   │ some.com   │ There's a breach in the warp core, captain
+          │ ID943 │   9555 │ debug    │ 2023-03-12 18:51:29.896 │       1 │
+│ shaneIxD    │ lpr      │ up.de      │ We're gonna need a bigger boat
+          │ ID994 │   9711 │ emerg    │ 2023-03-12 18:51:30.896 │       1 │
+│ shaneIxD    │ lpr      │ for.net    │ We're gonna need a bigger boat
+          │ ID797 │   4446 │ info     │ 2023-03-12 18:51:31.895 │       1 │
+│ devankoshal │ uucp     │ we.net     │ You're not gonna believe what just happened
+          │ ID904 │    896 │ notice   │ 2023-03-12 18:51:32.924 │       1 │
+│ benefritz   │ local0   │ random.net │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID548 │   9034 │ err      │ 2023-03-12 18:51:33.895 │       1 │
+│ ahmadajmi   │ local6   │ up.com     │ Take a breath, let it go, walk away
+          │ ID944 │   4920 │ crit     │ 2023-03-12 18:51:34.895 │       2 │
+│ ahmadajmi   │ news     │ some.net   │ Pretty pretty pretty good
+          │ ID397 │   7511 │ crit     │ 2023-03-12 18:51:35.896 │       2 │
+│ jesseddy    │ uucp     │ we.com     │ Take a breath, let it go, walk away
+          │ ID845 │   2594 │ err      │ 2023-03-12 18:51:36.895 │       2 │
+│ jesseddy    │ ftp      │ names.com  │ We're gonna need a bigger boat
+          │ ID627 │   8643 │ err      │ 2023-03-12 18:51:37.896 │       2 │
+│ ahmadajmi   │ local7   │ names.net  │ You're not gonna believe what just happened
+          │ ID721 │   2340 │ warning  │ 2023-03-12 18:51:38.895 │       2 │
+│ devankoshal │ mail     │ we.us      │ #hugops to everyone who has to deal with this
+          │ ID487 │   9750 │ crit     │ 2023-03-12 18:51:39.896 │       1 │
+│ Karimmove   │ audit    │ names.com  │ Maybe we just shouldn't use computers
+          │ ID684 │   3294 │ err      │ 2023-03-12 18:51:40.895 │       2 │
+│ shaneIxD    │ news     │ some.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID924 │   2493 │ alert    │ 2023-03-12 18:51:41.896 │       2 │
+│ ahmadajmi   │ ntp      │ names.com  │ Pretty pretty pretty good
+          │ ID622 │   2388 │ alert    │ 2023-03-12 18:51:42.896 │       1 │
+│ benefritz   │ audit    │ up.net     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID140 │   5011 │ emerg    │ 2023-03-12 18:51:43.896 │       1 │
+│ benefritz   │ local4   │ for.org    │ There's a breach in the warp core, captain
+          │ ID439 │   3796 │ debug    │ 2023-03-12 18:51:44.902 │       1 │
+│ benefritz   │ authpriv │ random.com │ #hugops to everyone who has to deal with this
+          │ ID140 │   4860 │ info     │ 2023-03-12 18:51:45.896 │       2 │
+│ Karimmove   │ local5   │ we.com     │ Maybe we just shouldn't use computers
+          │ ID302 │   7535 │ alert    │ 2023-03-12 18:51:46.895 │       2 │
+│ jesseddy    │ local0   │ names.us   │ #hugops to everyone who has to deal with this
+          │ ID784 │   4172 │ crit     │ 2023-03-12 18:51:47.896 │       2 │
+│ devankoshal │ local5   │ some.us    │ You're not gonna believe what just happened
+          │ ID288 │   7766 │ debug    │ 2023-03-12 18:51:48.896 │       2 │
+│ jesseddy    │ authpriv │ make.com   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID341 │   6622 │ debug    │ 2023-03-12 18:51:49.896 │       1 │
+│ ahmadajmi   │ local5   │ make.org   │ #hugops to everyone who has to deal with this
+          │ ID565 │   3777 │ debug    │ 2023-03-12 18:51:50.896 │       2 │
+│ devankoshal │ uucp     │ random.org │ Pretty pretty pretty good
+          │ ID618 │   5465 │ err      │ 2023-03-12 18:51:51.895 │       2 │
+│ ahmadajmi   │ clockd   │ for.org    │ Take a breath, let it go, walk away
+          │ ID464 │   2686 │ notice   │ 2023-03-12 18:51:52.895 │       1 │
+│ Karimmove   │ local6   │ names.org  │ Pretty pretty pretty good
+          │ ID851 │   5133 │ warning  │ 2023-03-12 18:51:53.896 │       1 │
+│ ahmadajmi   │ clockd   │ we.us      │ We're gonna need a bigger boat
+          │ ID479 │   6024 │ notice   │ 2023-03-12 18:51:54.896 │       2 │
+│ devankoshal │ audit    │ random.com │ You're not gonna believe what just happened
+          │ ID435 │   3924 │ err      │ 2023-03-12 18:51:55.896 │       2 │
+│ ahmadajmi   │ local3   │ make.net   │ Maybe we just shouldn't use computers
+          │ ID595 │   4144 │ info     │ 2023-03-12 18:51:56.896 │       1 │
+│ devankoshal │ authpriv │ some.de    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID14  │   7654 │ debug    │ 2023-03-12 18:51:57.895 │       1 │
+│ benefritz   │ uucp     │ for.com    │ There's a breach in the warp core, captain
+          │ ID556 │   1033 │ alert    │ 2023-03-12 18:51:58.896 │       2 │
+│ Karimmove   │ local7   │ names.org  │ #hugops to everyone who has to deal with this
+          │ ID939 │   4433 │ emerg    │ 2023-03-12 18:51:59.986 │       2 │
+│ devankoshal │ local6   │ names.de   │ Take a breath, let it go, walk away
+          │ ID213 │   8648 │ emerg    │ 2023-03-12 18:52:00.897 │       2 │
+│ benefritz   │ cron     │ for.org    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID38  │   3745 │ crit     │ 2023-03-12 18:52:01.896 │       1 │
+│ devankoshal │ local7   │ names.us   │ You're not gonna believe what just happened
+          │ ID99  │   5194 │ crit     │ 2023-03-12 18:52:02.896 │       2 │
+│ meln1ks     │ local2   │ we.org     │ Take a breath, let it go, walk away
+          │ ID125 │   2119 │ err      │ 2023-03-12 18:52:03.896 │       2 │
+│ Karimmove   │ user     │ make.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID537 │   8234 │ emerg    │ 2023-03-12 18:52:04.904 │       2 │
+│ ahmadajmi   │ audit    │ we.org     │ Take a breath, let it go, walk away
+          │ ID943 │   6556 │ alert    │ 2023-03-12 18:52:05.896 │       1 │
+│ meln1ks     │ local4   │ we.com     │ #hugops to everyone who has to deal with this
+          │ ID235 │    412 │ debug    │ 2023-03-12 18:52:06.895 │       1 │
+│ benefritz   │ ftp      │ we.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID85  │   4908 │ info     │ 2023-03-12 18:52:07.896 │       1 │
+│ meln1ks     │ ntp      │ for.net    │ You're not gonna believe what just happened
+          │ ID218 │   8939 │ err      │ 2023-03-12 18:52:08.896 │       2 │
+│ benefritz   │ daemon   │ some.de    │ Pretty pretty pretty good
+          │ ID813 │   4529 │ warning  │ 2023-03-12 18:52:09.896 │       2 │
+│ shaneIxD    │ ftp      │ random.net │ Pretty pretty pretty good
+          │ ID511 │    344 │ alert    │ 2023-03-12 18:52:10.896 │       2 │
+│ devankoshal │ local0   │ for.net    │ We're gonna need a bigger boat
+          │ ID909 │   5922 │ debug    │ 2023-03-12 18:52:11.896 │       2 │
+│ benefritz   │ audit    │ names.de   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID163 │   6053 │ notice   │ 2023-03-12 18:52:12.896 │       1 │
+│ meln1ks     │ clockd   │ random.us  │ Maybe we just shouldn't use computers
+          │ ID696 │   6151 │ crit     │ 2023-03-12 18:52:13.896 │       2 │
+│ devankoshal │ ntp      │ random.com │ Take a breath, let it go, walk away
+          │ ID702 │   8038 │ info     │ 2023-03-12 18:52:14.895 │       1 │
+│ benefritz   │ local1   │ make.us    │ Take a breath, let it go, walk away
+          │ ID244 │   1800 │ crit     │ 2023-03-12 18:52:15.927 │       1 │
+│ shaneIxD    │ authpriv │ for.net    │ Pretty pretty pretty good
+          │ ID214 │   1082 │ info     │ 2023-03-12 18:52:16.896 │       1 │
+│ jesseddy    │ local5   │ random.net │ #hugops to everyone who has to deal with this
+          │ ID387 │   7181 │ debug    │ 2023-03-12 18:52:17.896 │       2 │
+│ jesseddy    │ local0   │ random.com │ We're gonna need a bigger boat
+          │ ID450 │   3232 │ alert    │ 2023-03-12 18:52:18.896 │       1 │
+│ devankoshal │ local6   │ random.net │ There's a breach in the warp core, captain
+          │ ID92  │   8225 │ err      │ 2023-03-12 18:52:19.896 │       1 │
+│ meln1ks     │ local4   │ random.de  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID182 │   9107 │ info     │ 2023-03-12 18:52:20.896 │       2 │
+│ devankoshal │ syslog   │ names.us   │ There's a breach in the warp core, captain
+          │ ID660 │   5197 │ crit     │ 2023-03-12 18:52:21.896 │       1 │
+│ jesseddy    │ local6   │ for.org    │ We're gonna need a bigger boat
+          │ ID618 │   7778 │ warning  │ 2023-03-12 18:52:22.896 │       1 │
+│ jesseddy    │ local0   │ make.com   │ Maybe we just shouldn't use computers
+          │ ID590 │   9345 │ warning  │ 2023-03-12 18:52:23.896 │       1 │
+│ devankoshal │ cron     │ up.com     │ #hugops to everyone who has to deal with this
+          │ ID695 │   2334 │ debug    │ 2023-03-12 18:52:24.896 │       1 │
+│ Karimmove   │ alert    │ some.us    │ Maybe we just shouldn't use computers
+          │ ID699 │   3112 │ crit     │ 2023-03-12 18:52:25.896 │       1 │
+│ devankoshal │ local3   │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID547 │   6852 │ alert    │ 2023-03-12 18:52:26.896 │       1 │
+│ benefritz   │ daemon   │ we.org     │ There's a breach in the warp core, captain
+          │ ID159 │   1333 │ debug    │ 2023-03-12 18:52:27.895 │       1 │
+│ shaneIxD    │ news     │ for.de     │ Pretty pretty pretty good
+          │ ID194 │   7228 │ crit     │ 2023-03-12 18:52:28.896 │       1 │
+│ ahmadajmi   │ local2   │ random.com │ We're gonna need a bigger boat
+          │ ID257 │   7111 │ err      │ 2023-03-12 18:52:29.901 │       2 │
+│ Karimmove   │ ftp      │ names.us   │ Pretty pretty pretty good
+          │ ID478 │   2778 │ err      │ 2023-03-12 18:52:30.896 │       1 │
+│ meln1ks     │ local5   │ up.net     │ There's a breach in the warp core, captain
+          │ ID557 │    677 │ err      │ 2023-03-12 18:52:31.896 │       2 │
+│ devankoshal │ uucp     │ some.org   │ Maybe we just shouldn't use computers
+          │ ID524 │   2262 │ debug    │ 2023-03-12 18:52:32.897 │       1 │
+│ devankoshal │ local1   │ up.net     │ You're not gonna believe what just happened
+          │ ID31  │   2276 │ info     │ 2023-03-12 18:52:33.896 │       1 │
+│ devankoshal │ local5   │ some.net   │ Pretty pretty pretty good
+          │ ID798 │   8096 │ debug    │ 2023-03-12 18:52:34.896 │       1 │
+│ jesseddy    │ ftp      │ for.us     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID777 │   3265 │ warning  │ 2023-03-12 18:52:35.896 │       1 │
+│ devankoshal │ user     │ up.org     │ There's a breach in the warp core, captain
+          │ ID358 │   5450 │ info     │ 2023-03-12 18:52:36.896 │       2 │
+│ devankoshal │ local0   │ make.net   │ You're not gonna believe what just happened
+          │ ID436 │   2003 │ emerg    │ 2023-03-12 18:52:37.895 │       1 │
+│ Karimmove   │ local6   │ for.de     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID916 │    229 │ notice   │ 2023-03-12 18:52:38.895 │       1 │
+│ meln1ks     │ authpriv │ names.net  │ There's a breach in the warp core, captain
+          │ ID549 │   5001 │ debug    │ 2023-03-12 18:52:39.896 │       1 │
+│ jesseddy    │ lpr      │ for.net    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID284 │   6128 │ emerg    │ 2023-03-12 18:52:40.898 │       1 │
+│ benefritz   │ syslog   │ some.org   │ There's a breach in the warp core, captain
+          │ ID837 │   3146 │ err      │ 2023-03-12 18:52:41.896 │       2 │
+│ benefritz   │ audit    │ up.de      │ You're not gonna believe what just happened
+          │ ID772 │   8588 │ notice   │ 2023-03-12 18:52:42.895 │       1 │
+│ meln1ks     │ alert    │ names.de   │ We're gonna need a bigger boat
+          │ ID675 │   3953 │ err      │ 2023-03-12 18:52:43.897 │       1 │
+│ Karimmove   │ audit    │ make.org   │ Pretty pretty pretty good
+          │ ID190 │   3287 │ notice   │ 2023-03-12 18:52:44.896 │       2 │
+│ Karimmove   │ daemon   │ up.us      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID962 │   7501 │ crit     │ 2023-03-12 18:52:45.896 │       1 │
+│ ahmadajmi   │ local7   │ names.net  │ Pretty pretty pretty good
+          │ ID776 │   2421 │ info     │ 2023-03-12 18:52:46.896 │       2 │
+│ Karimmove   │ local3   │ we.org     │ We're gonna need a bigger boat
+          │ ID495 │   5024 │ notice   │ 2023-03-12 18:52:47.896 │       2 │
+│ meln1ks     │ uucp     │ for.com    │ You're not gonna believe what just happened
+          │ ID323 │   8235 │ err      │ 2023-03-12 18:52:48.896 │       1 │
+│ Karimmove   │ local1   │ make.de    │ Take a breath, let it go, walk away
+          │ ID153 │   8453 │ crit     │ 2023-03-12 18:52:49.896 │       2 │
+│ jesseddy    │ ftp      │ names.de   │ #hugops to everyone who has to deal with this
+          │ ID158 │   8435 │ crit     │ 2023-03-12 18:52:50.896 │       2 │
+│ jesseddy    │ local7   │ make.org   │ #hugops to everyone who has to deal with this
+          │ ID731 │    284 │ warning  │ 2023-03-12 18:52:51.896 │       2 │
+│ meln1ks     │ syslog   │ random.org │ Pretty pretty pretty good
+          │ ID944 │   8492 │ crit     │ 2023-03-12 18:52:52.896 │       2 │
+│ devankoshal │ daemon   │ names.de   │ Maybe we just shouldn't use computers
+          │ ID657 │   5628 │ warning  │ 2023-03-12 18:52:53.895 │       2 │
+│ shaneIxD    │ local2   │ names.com  │ You're not gonna believe what just happened
+          │ ID592 │    895 │ debug    │ 2023-03-12 18:52:54.896 │       1 │
+│ devankoshal │ cron     │ make.us    │ Maybe we just shouldn't use computers
+          │ ID960 │   2183 │ err      │ 2023-03-12 18:52:55.896 │       2 │
+│ devankoshal │ mail     │ we.de      │ We're gonna need a bigger boat
+          │ ID583 │   6996 │ notice   │ 2023-03-12 18:52:56.896 │       1 │
+│ devankoshal │ user     │ up.de      │ Pretty pretty pretty good
+          │ ID736 │   6932 │ debug    │ 2023-03-12 18:52:57.899 │       1 │
+│ shaneIxD    │ local7   │ some.net   │ Maybe we just shouldn't use computers
+          │ ID978 │   9670 │ notice   │ 2023-03-12 18:52:58.904 │       2 │
+│ benefritz   │ news     │ we.de      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID639 │   2022 │ emerg    │ 2023-03-12 18:52:59.896 │       1 │
+│ benefritz   │ syslog   │ names.com  │ Take a breath, let it go, walk away
+          │ ID795 │   5663 │ alert    │ 2023-03-12 18:53:00.896 │       2 │
+│ Karimmove   │ auth     │ make.com   │ Maybe we just shouldn't use computers
+          │ ID560 │   4893 │ crit     │ 2023-03-12 18:53:01.895 │       1 │
+│ ahmadajmi   │ alert    │ make.org   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID635 │   5783 │ emerg    │ 2023-03-12 18:53:02.896 │       1 │
+│ ahmadajmi   │ local4   │ random.us  │ Take a breath, let it go, walk away
+          │ ID583 │    902 │ err      │ 2023-03-12 18:53:03.897 │       2 │
+│ benefritz   │ kern     │ up.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID411 │   9274 │ warning  │ 2023-03-12 18:53:04.895 │       2 │
+│ benefritz   │ lpr      │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID642 │   4099 │ err      │ 2023-03-12 18:53:05.899 │       1 │
+│ meln1ks     │ lpr      │ some.org   │ Maybe we just shouldn't use computers
+          │ ID231 │   7876 │ notice   │ 2023-03-12 18:53:06.895 │       2 │
+│ ahmadajmi   │ local1   │ for.com    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID800 │   6153 │ warning  │ 2023-03-12 18:53:07.896 │       2 │
+│ benefritz   │ uucp     │ names.net  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID180 │   3300 │ warning  │ 2023-03-12 18:53:08.896 │       1 │
+│ jesseddy    │ local4   │ we.us      │ Take a breath, let it go, walk away
+          │ ID836 │   6424 │ notice   │ 2023-03-12 18:53:09.896 │       1 │
+│ meln1ks     │ lpr      │ up.de      │ Pretty pretty pretty good
+          │ ID513 │   7082 │ info     │ 2023-03-12 18:53:10.896 │       2 │
+│ benefritz   │ cron     │ for.us     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID555 │    242 │ err      │ 2023-03-12 18:53:11.896 │       2 │
+│ benefritz   │ cron     │ make.de    │ There's a breach in the warp core, captain
+          │ ID309 │   3639 │ debug    │ 2023-03-12 18:53:12.896 │       1 │
+│ meln1ks     │ audit    │ names.us   │ Maybe we just shouldn't use computers
+          │ ID310 │   4713 │ crit     │ 2023-03-12 18:53:13.896 │       2 │
+│ ahmadajmi   │ local4   │ some.org   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID145 │   6278 │ info     │ 2023-03-12 18:53:14.896 │       2 │
+│ devankoshal │ daemon   │ names.net  │ Take a breath, let it go, walk away
+          │ ID477 │   5807 │ emerg    │ 2023-03-12 18:53:15.895 │       2 │
+│ devankoshal │ cron     │ names.org  │ Take a breath, let it go, walk away
+          │ ID621 │   7825 │ alert    │ 2023-03-12 18:53:16.896 │       2 │
+│ shaneIxD    │ alert    │ for.de     │ Maybe we just shouldn't use computers
+          │ ID833 │   5321 │ warning  │ 2023-03-12 18:53:17.898 │       1 │
+│ Karimmove   │ local4   │ for.net    │ Pretty pretty pretty good
+          │ ID343 │   1343 │ emerg    │ 2023-03-12 18:53:18.896 │       1 │
+│ meln1ks     │ auth     │ up.com     │ Pretty pretty pretty good
+          │ ID700 │   1981 │ notice   │ 2023-03-12 18:53:19.908 │       1 │
+│ ahmadajmi   │ mail     │ random.de  │ Pretty pretty pretty good
+          │ ID754 │   9610 │ info     │ 2023-03-12 18:53:20.895 │       2 │
+│ ahmadajmi   │ local5   │ for.us     │ Pretty pretty pretty good
+          │ ID774 │   4132 │ info     │ 2023-03-12 18:53:21.896 │       1 │
+│ ahmadajmi   │ cron     │ we.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID355 │    241 │ err      │ 2023-03-12 18:53:22.911 │       1 │
+│ benefritz   │ mail     │ up.com     │ You're not gonna believe what just happened
+          │ ID142 │   6511 │ warning  │ 2023-03-12 18:53:23.896 │       2 │
+│ Karimmove   │ kern     │ names.net  │ Take a breath, let it go, walk away
+          │ ID732 │   7283 │ crit     │ 2023-03-12 18:53:24.896 │       1 │
+│ Karimmove   │ local0   │ up.us      │ Take a breath, let it go, walk away
+          │ ID503 │    198 │ crit     │ 2023-03-12 18:53:25.903 │       1 │
+│ meln1ks     │ lpr      │ some.org   │ Pretty pretty pretty good
+          │ ID140 │   1002 │ warning  │ 2023-03-12 18:53:26.896 │       1 │
+│ benefritz   │ cron     │ some.us    │ Pretty pretty pretty good
+          │ ID381 │   5187 │ alert    │ 2023-03-12 18:53:27.895 │       2 │
+│ meln1ks     │ mail     │ some.de    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID969 │   7767 │ emerg    │ 2023-03-12 18:53:28.903 │       1 │
+│ meln1ks     │ news     │ some.org   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID37  │   5278 │ alert    │ 2023-03-12 18:53:29.896 │       1 │
+│ shaneIxD    │ alert    │ we.de      │ There's a breach in the warp core, captain
+          │ ID269 │   1169 │ info     │ 2023-03-12 18:53:30.907 │       2 │
+│ ahmadajmi   │ authpriv │ we.com     │ Take a breath, let it go, walk away
+          │ ID434 │   1783 │ notice   │ 2023-03-12 18:53:31.895 │       1 │
+│ benefritz   │ ntp      │ make.de    │ Pretty pretty pretty good
+          │ ID242 │   5799 │ err      │ 2023-03-12 18:53:32.896 │       1 │
+│ benefritz   │ mail     │ make.net   │ Take a breath, let it go, walk away
+          │ ID157 │   9010 │ debug    │ 2023-03-12 18:53:33.896 │       2 │
+│ meln1ks     │ local1   │ make.net   │ There's a breach in the warp core, captain
+          │ ID426 │   9900 │ warning  │ 2023-03-12 18:53:34.896 │       1 │
+│ Karimmove   │ kern     │ make.us    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID716 │    909 │ emerg    │ 2023-03-12 18:53:35.896 │       1 │
+│ meln1ks     │ uucp     │ we.com     │ You're not gonna believe what just happened
+          │ ID366 │   4104 │ alert    │ 2023-03-12 18:53:36.896 │       2 │
+│ jesseddy    │ audit    │ random.com │ We're gonna need a bigger boat
+          │ ID86  │   3294 │ err      │ 2023-03-12 18:53:37.896 │       1 │
+│ jesseddy    │ kern     │ some.com   │ Maybe we just shouldn't use computers
+          │ ID958 │   4758 │ alert    │ 2023-03-12 18:53:38.896 │       1 │
+│ devankoshal │ local4   │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID481 │   9567 │ err      │ 2023-03-12 18:53:39.896 │       2 │
+│ meln1ks     │ local7   │ some.com   │ There's a breach in the warp core, captain
+          │ ID367 │    726 │ info     │ 2023-03-12 18:53:40.896 │       1 │
+│ devankoshal │ cron     │ make.com   │ Maybe we just shouldn't use computers
+          │ ID294 │   1321 │ emerg    │ 2023-03-12 18:53:41.896 │       1 │
+│ meln1ks     │ clockd   │ we.de      │ Take a breath, let it go, walk away
+          │ ID967 │   4814 │ debug    │ 2023-03-12 18:53:42.896 │       2 │
+│ Karimmove   │ uucp     │ for.com    │ There's a breach in the warp core, captain
+          │ ID140 │   2407 │ err      │ 2023-03-12 18:53:43.896 │       1 │
+│ shaneIxD    │ daemon   │ make.de    │ You're not gonna believe what just happened
+          │ ID799 │   3992 │ emerg    │ 2023-03-12 18:53:44.899 │       2 │
+│ devankoshal │ local7   │ random.us  │ Maybe we just shouldn't use computers
+          │ ID279 │   3715 │ alert    │ 2023-03-12 18:53:45.904 │       2 │
+│ jesseddy    │ alert    │ random.com │ Pretty pretty pretty good
+          │ ID197 │   5144 │ debug    │ 2023-03-12 18:53:46.896 │       1 │
+│ benefritz   │ audit    │ for.net    │ There's a breach in the warp core, captain
+          │ ID998 │   9110 │ err      │ 2023-03-12 18:53:47.896 │       1 │
+│ shaneIxD    │ auth     │ for.net    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID348 │   9720 │ notice   │ 2023-03-12 18:53:48.895 │       1 │
+│ devankoshal │ clockd   │ names.org  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID295 │   7947 │ emerg    │ 2023-03-12 18:53:49.896 │       2 │
+│ meln1ks     │ lpr      │ random.de  │ There's a breach in the warp core, captain
+          │ ID145 │   7979 │ err      │ 2023-03-12 18:53:50.896 │       2 │
+│ shaneIxD    │ local4   │ we.net     │ Take a breath, let it go, walk away
+          │ ID223 │    145 │ emerg    │ 2023-03-12 18:53:51.896 │       2 │
+│ Karimmove   │ clockd   │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID562 │   5029 │ debug    │ 2023-03-12 18:53:52.896 │       2 │
+│ benefritz   │ local6   │ for.net    │ Pretty pretty pretty good
+          │ ID170 │   1477 │ notice   │ 2023-03-12 18:53:53.896 │       1 │
+│ ahmadajmi   │ cron     │ we.org     │ #hugops to everyone who has to deal with this
+          │ ID918 │   9452 │ emerg    │ 2023-03-12 18:53:54.896 │       2 │
+│ Karimmove   │ local7   │ make.de    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID639 │   7519 │ emerg    │ 2023-03-12 18:53:55.896 │       1 │
+│ benefritz   │ lpr      │ we.de      │ Maybe we just shouldn't use computers
+          │ ID701 │   2863 │ err      │ 2023-03-12 18:53:56.896 │       2 │
+│ ahmadajmi   │ ntp      │ for.org    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID692 │   1027 │ warning  │ 2023-03-12 18:53:57.895 │       2 │
+│ ahmadajmi   │ local4   │ we.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID614 │   2015 │ err      │ 2023-03-12 18:53:58.896 │       1 │
+│ benefritz   │ ntp      │ make.de    │ Take a breath, let it go, walk away
+          │ ID592 │   1627 │ info     │ 2023-03-12 18:53:59.896 │       1 │
+│ ahmadajmi   │ local4   │ make.net   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID887 │   6998 │ notice   │ 2023-03-12 18:54:00.896 │       1 │
+│ meln1ks     │ kern     │ random.org │ You're not gonna believe what just happened
+          │ ID460 │   3843 │ crit     │ 2023-03-12 18:54:01.896 │       1 │
+│ ahmadajmi   │ ftp      │ random.com │ There's a breach in the warp core, captain
+          │ ID956 │   5332 │ emerg    │ 2023-03-12 18:54:02.895 │       1 │
+│ devankoshal │ local5   │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID74  │   5670 │ notice   │ 2023-03-12 18:54:03.897 │       2 │
+│ meln1ks     │ audit    │ up.org     │ Pretty pretty pretty good
+          │ ID342 │    380 │ alert    │ 2023-03-12 18:54:04.896 │       1 │
+│ meln1ks     │ clockd   │ for.org    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID847 │    665 │ info     │ 2023-03-12 18:54:05.896 │       1 │
+│ meln1ks     │ lpr      │ for.org    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID910 │   3325 │ debug    │ 2023-03-12 18:54:06.896 │       1 │
+│ devankoshal │ local1   │ make.us    │ Maybe we just shouldn't use computers
+          │ ID568 │   7242 │ crit     │ 2023-03-12 18:54:07.896 │       1 │
+│ Karimmove   │ local1   │ random.de  │ There's a breach in the warp core, captain
+          │ ID656 │   2268 │ notice   │ 2023-03-12 18:54:08.895 │       2 │
+│ Karimmove   │ daemon   │ for.de     │ You're not gonna believe what just happened
+          │ ID907 │   9663 │ warning  │ 2023-03-12 18:54:09.896 │       1 │
+│ jesseddy    │ mail     │ we.org     │ You're not gonna believe what just happened
+          │ ID940 │    452 │ crit     │ 2023-03-12 18:54:10.895 │       1 │
+│ Karimmove   │ local2   │ we.de      │ You're not gonna believe what just happened
+          │ ID914 │   7566 │ alert    │ 2023-03-12 18:54:11.895 │       1 │
+│ ahmadajmi   │ local3   │ up.us      │ You're not gonna believe what just happened
+          │ ID86  │   5183 │ debug    │ 2023-03-12 18:54:12.896 │       1 │
+│ jesseddy    │ local3   │ make.us    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID971 │   8718 │ debug    │ 2023-03-12 18:54:13.896 │       2 │
+│ devankoshal │ user     │ for.net    │ There's a breach in the warp core, captain
+          │ ID638 │   2596 │ info     │ 2023-03-12 18:54:14.895 │       2 │
+│ ahmadajmi   │ local4   │ names.us   │ Pretty pretty pretty good
+          │ ID884 │   3484 │ info     │ 2023-03-12 18:54:15.896 │       2 │
+│ shaneIxD    │ local5   │ up.de      │ #hugops to everyone who has to deal with this
+          │ ID32  │   1181 │ notice   │ 2023-03-12 18:54:16.900 │       2 │
+│ ahmadajmi   │ syslog   │ for.com    │ We're gonna need a bigger boat
+          │ ID575 │   7000 │ notice   │ 2023-03-12 18:54:17.896 │       2 │
+│ Karimmove   │ local5   │ random.com │ Pretty pretty pretty good
+          │ ID303 │   2908 │ debug    │ 2023-03-12 18:54:18.896 │       2 │
+│ shaneIxD    │ lpr      │ make.us    │ Maybe we just shouldn't use computers
+          │ ID598 │   8973 │ info     │ 2023-03-12 18:54:19.897 │       2 │
+│ meln1ks     │ local6   │ some.org   │ We're gonna need a bigger boat
+          │ ID387 │   4832 │ warning  │ 2023-03-12 18:54:20.903 │       1 │
+│ benefritz   │ local2   │ we.de      │ Maybe we just shouldn't use computers
+          │ ID451 │   9980 │ emerg    │ 2023-03-12 18:54:21.895 │       1 │
+│ ahmadajmi   │ ntp      │ some.us    │ Maybe we just shouldn't use computers
+          │ ID841 │   3007 │ notice   │ 2023-03-12 18:54:22.896 │       1 │
+│ jesseddy    │ local0   │ random.us  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID207 │   5758 │ info     │ 2023-03-12 18:54:23.896 │       2 │
+│ Karimmove   │ local2   │ random.org │ Take a breath, let it go, walk away
+          │ ID507 │   7474 │ emerg    │ 2023-03-12 18:54:24.896 │       2 │
+│ shaneIxD    │ news     │ up.de      │ We're gonna need a bigger boat
+          │ ID773 │   1108 │ debug    │ 2023-03-12 18:54:25.896 │       1 │
+│ benefritz   │ ntp      │ for.de     │ We're gonna need a bigger boat
+          │ ID782 │    634 │ alert    │ 2023-03-12 18:54:26.902 │       2 │
+│ devankoshal │ clockd   │ we.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID783 │   7533 │ debug    │ 2023-03-12 18:54:27.896 │       2 │
+│ Karimmove   │ ntp      │ for.us     │ #hugops to everyone who has to deal with this
+          │ ID665 │   2489 │ info     │ 2023-03-12 18:54:28.896 │       1 │
+│ devankoshal │ clockd   │ some.net   │ #hugops to everyone who has to deal with this
+          │ ID933 │   2023 │ err      │ 2023-03-12 18:54:29.909 │       1 │
+│ shaneIxD    │ kern     │ some.com   │ Maybe we just shouldn't use computers
+          │ ID384 │   7717 │ crit     │ 2023-03-12 18:54:30.896 │       1 │
+│ devankoshal │ auth     │ some.us    │ We're gonna need a bigger boat
+          │ ID275 │   6681 │ err      │ 2023-03-12 18:54:31.896 │       2 │
+│ ahmadajmi   │ local0   │ up.net     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID531 │   8215 │ debug    │ 2023-03-12 18:54:32.908 │       1 │
+│ ahmadajmi   │ clockd   │ for.com    │ You're not gonna believe what just happened
+          │ ID611 │   1654 │ err      │ 2023-03-12 18:54:33.896 │       1 │
+│ Karimmove   │ local6   │ make.org   │ You're not gonna believe what just happened
+          │ ID654 │    716 │ info     │ 2023-03-12 18:54:34.896 │       1 │
+│ shaneIxD    │ kern     │ random.com │ #hugops to everyone who has to deal with this
+          │ ID75  │   4103 │ warning  │ 2023-03-12 18:54:35.896 │       1 │
+│ jesseddy    │ syslog   │ we.org     │ We're gonna need a bigger boat
+          │ ID140 │   5984 │ warning  │ 2023-03-12 18:54:36.896 │       1 │
+│ ahmadajmi   │ local4   │ names.net  │ Pretty pretty pretty good
+          │ ID731 │   2425 │ warning  │ 2023-03-12 18:54:37.896 │       2 │
+│ benefritz   │ local2   │ make.org   │ Maybe we just shouldn't use computers
+          │ ID768 │   6973 │ crit     │ 2023-03-12 18:54:38.896 │       2 │
+│ jesseddy    │ local0   │ up.com     │ Take a breath, let it go, walk away
+          │ ID216 │   9708 │ emerg    │ 2023-03-12 18:54:39.896 │       1 │
+│ ahmadajmi   │ local3   │ up.org     │ You're not gonna believe what just happened
+          │ ID678 │   7090 │ warning  │ 2023-03-12 18:54:40.907 │       2 │
+│ Karimmove   │ mail     │ random.com │ Pretty pretty pretty good
+          │ ID188 │   1773 │ crit     │ 2023-03-12 18:54:41.896 │       1 │
+│ devankoshal │ audit    │ random.net │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID616 │   8637 │ err      │ 2023-03-12 18:54:42.896 │       2 │
+│ jesseddy    │ local7   │ random.com │ Maybe we just shouldn't use computers
+          │ ID405 │   6562 │ notice   │ 2023-03-12 18:54:43.896 │       2 │
+│ devankoshal │ cron     │ names.com  │ We're gonna need a bigger boat
+          │ ID625 │   8694 │ warning  │ 2023-03-12 18:54:44.896 │       2 │
+│ meln1ks     │ syslog   │ we.de      │ Pretty pretty pretty good
+          │ ID507 │   1548 │ warning  │ 2023-03-12 18:54:45.896 │       1 │
+│ meln1ks     │ local3   │ names.us   │ There's a breach in the warp core, captain
+          │ ID10  │   8776 │ alert    │ 2023-03-12 18:54:46.896 │       1 │
+│ ahmadajmi   │ local3   │ names.com  │ Maybe we just shouldn't use computers
+          │ ID985 │   3413 │ emerg    │ 2023-03-12 18:54:47.896 │       2 │
+│ benefritz   │ lpr      │ random.us  │ We're gonna need a bigger boat
+          │ ID27  │   1107 │ warning  │ 2023-03-12 18:54:48.896 │       1 │
+│ jesseddy    │ alert    │ random.net │ Maybe we just shouldn't use computers
+          │ ID818 │   2026 │ alert    │ 2023-03-12 18:54:49.896 │       1 │
+│ jesseddy    │ user     │ for.com    │ Pretty pretty pretty good
+          │ ID746 │   6743 │ emerg    │ 2023-03-12 18:54:50.896 │       2 │
+│ jesseddy    │ alert    │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID671 │   1904 │ crit     │ 2023-03-12 18:54:51.896 │       1 │
+│ ahmadajmi   │ syslog   │ we.us      │ We're gonna need a bigger boat
+          │ ID181 │    222 │ notice   │ 2023-03-12 18:54:52.896 │       2 │
+│ benefritz   │ uucp     │ names.de   │ Pretty pretty pretty good
+          │ ID951 │   5800 │ alert    │ 2023-03-12 18:54:53.899 │       1 │
+│ meln1ks     │ local0   │ random.net │ Pretty pretty pretty good
+          │ ID854 │   6603 │ notice   │ 2023-03-12 18:54:54.940 │       1 │
+│ shaneIxD    │ local1   │ names.net  │ There's a breach in the warp core, captain
+          │ ID335 │   5728 │ info     │ 2023-03-12 18:54:55.896 │       2 │
+│ Karimmove   │ ntp      │ up.net     │ There's a breach in the warp core, captain
+          │ ID221 │   1215 │ debug    │ 2023-03-12 18:54:56.896 │       1 │
+│ shaneIxD    │ local2   │ some.net   │ Take a breath, let it go, walk away
+          │ ID339 │   7529 │ warning  │ 2023-03-12 18:54:57.896 │       2 │
+│ Karimmove   │ auth     │ some.us    │ Take a breath, let it go, walk away
+          │ ID188 │   3813 │ info     │ 2023-03-12 18:54:58.937 │       2 │
+│ devankoshal │ local2   │ we.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID420 │   7817 │ info     │ 2023-03-12 18:54:59.897 │       1 │
+│ shaneIxD    │ local4   │ for.com    │ Pretty pretty pretty good
+          │ ID544 │   7796 │ debug    │ 2023-03-12 18:55:00.919 │       2 │
+│ ahmadajmi   │ local4   │ names.org  │ We're gonna need a bigger boat
+          │ ID88  │   6069 │ notice   │ 2023-03-12 18:55:01.902 │       1 │
+│ shaneIxD    │ ntp      │ we.net     │ You're not gonna believe what just happened
+          │ ID449 │   9707 │ err      │ 2023-03-12 18:55:02.896 │       2 │
+│ meln1ks     │ ftp      │ for.net    │ There's a breach in the warp core, captain
+          │ ID634 │   5114 │ warning  │ 2023-03-12 18:55:03.896 │       1 │
+│ jesseddy    │ lpr      │ names.net  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID763 │   4291 │ alert    │ 2023-03-12 18:55:04.896 │       2 │
+│ meln1ks     │ mail     │ random.org │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID721 │   5565 │ notice   │ 2023-03-12 18:55:05.896 │       1 │
+│ ahmadajmi   │ ntp      │ make.us    │ There's a breach in the warp core, captain
+          │ ID114 │   5900 │ emerg    │ 2023-03-12 18:55:06.895 │       2 │
+│ devankoshal │ news     │ names.de   │ Maybe we just shouldn't use computers
+          │ ID243 │   4017 │ notice   │ 2023-03-12 18:55:07.896 │       2 │
+│ Karimmove   │ clockd   │ make.com   │ You're not gonna believe what just happened
+          │ ID777 │   7301 │ emerg    │ 2023-03-12 18:55:08.898 │       1 │
+│ benefritz   │ cron     │ make.org   │ Take a breath, let it go, walk away
+          │ ID110 │    690 │ debug    │ 2023-03-12 18:55:09.896 │       2 │
+│ jesseddy    │ local3   │ names.com  │ Take a breath, let it go, walk away
+          │ ID972 │   1246 │ alert    │ 2023-03-12 18:55:10.895 │       1 │
+│ Karimmove   │ ftp      │ up.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID502 │   9325 │ notice   │ 2023-03-12 18:55:11.906 │       2 │
+│ Karimmove   │ local2   │ make.net   │ We're gonna need a bigger boat
+          │ ID766 │   6988 │ crit     │ 2023-03-12 18:55:12.896 │       2 │
+│ jesseddy    │ ftp      │ some.org   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID953 │   6957 │ crit     │ 2023-03-12 18:55:13.896 │       1 │
+│ devankoshal │ local1   │ some.us    │ Maybe we just shouldn't use computers
+          │ ID686 │   1746 │ err      │ 2023-03-12 18:55:14.905 │       1 │
+│ jesseddy    │ mail     │ up.com     │ You're not gonna believe what just happened
+          │ ID709 │   5414 │ notice   │ 2023-03-12 18:55:15.896 │       1 │
+│ devankoshal │ daemon   │ random.net │ Maybe we just shouldn't use computers
+          │ ID169 │   1623 │ crit     │ 2023-03-12 18:55:16.921 │       2 │
+│ jesseddy    │ local2   │ we.org     │ There's a breach in the warp core, captain
+          │ ID837 │   5464 │ crit     │ 2023-03-12 18:55:17.896 │       1 │
+│ benefritz   │ local0   │ we.org     │ Pretty pretty pretty good
+          │ ID616 │   1460 │ notice   │ 2023-03-12 18:55:18.896 │       1 │
+│ ahmadajmi   │ kern     │ random.com │ We're gonna need a bigger boat
+          │ ID363 │   2939 │ crit     │ 2023-03-12 18:55:19.908 │       1 │
+│ ahmadajmi   │ local1   │ some.org   │ Take a breath, let it go, walk away
+          │ ID366 │   2764 │ info     │ 2023-03-12 18:55:20.897 │       2 │
+│ Karimmove   │ audit    │ random.us  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID79  │   8161 │ info     │ 2023-03-12 18:55:21.896 │       2 │
+│ jesseddy    │ lpr      │ we.net     │ Pretty pretty pretty good
+          │ ID394 │   6759 │ debug    │ 2023-03-12 18:55:22.896 │       1 │
+│ meln1ks     │ ntp      │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID710 │   3704 │ debug    │ 2023-03-12 18:55:23.896 │       2 │
+│ devankoshal │ local7   │ names.net  │ You're not gonna believe what just happened
+          │ ID582 │   1608 │ info     │ 2023-03-12 18:55:24.896 │       2 │
+│ Karimmove   │ local7   │ for.com    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID585 │   4184 │ emerg    │ 2023-03-12 18:55:25.896 │       1 │
+│ devankoshal │ alert    │ make.com   │ Take a breath, let it go, walk away
+          │ ID864 │   9219 │ info     │ 2023-03-12 18:55:26.899 │       1 │
+│ jesseddy    │ mail     │ names.org  │ You're not gonna believe what just happened
+          │ ID114 │   3723 │ err      │ 2023-03-12 18:55:27.895 │       1 │
+│ devankoshal │ local4   │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID770 │   6420 │ debug    │ 2023-03-12 18:55:28.896 │       1 │
+│ meln1ks     │ auth     │ names.com  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID514 │   2389 │ notice   │ 2023-03-12 18:55:29.912 │       2 │
+│ devankoshal │ ntp      │ some.us    │ You're not gonna believe what just happened
+          │ ID954 │   7936 │ err      │ 2023-03-12 18:55:30.904 │       1 │
+│ meln1ks     │ ntp      │ make.us    │ We're gonna need a bigger boat
+          │ ID940 │   9503 │ err      │ 2023-03-12 18:55:31.896 │       2 │
+│ benefritz   │ local6   │ names.us   │ There's a breach in the warp core, captain
+          │ ID379 │   2432 │ alert    │ 2023-03-12 18:55:32.896 │       1 │
+│ meln1ks     │ local4   │ names.us   │ Maybe we just shouldn't use computers
+          │ ID843 │    448 │ notice   │ 2023-03-12 18:55:33.896 │       2 │
+│ shaneIxD    │ news     │ we.com     │ Maybe we just shouldn't use computers
+          │ ID707 │   1427 │ err      │ 2023-03-12 18:55:34.896 │       1 │
+│ meln1ks     │ ftp      │ make.com   │ We're gonna need a bigger boat
+          │ ID657 │   9005 │ emerg    │ 2023-03-12 18:55:35.895 │       1 │
+│ Karimmove   │ syslog   │ make.de    │ #hugops to everyone who has to deal with this
+          │ ID721 │    911 │ err      │ 2023-03-12 18:55:36.895 │       2 │
+│ meln1ks     │ authpriv │ names.com  │ There's a breach in the warp core, captain
+          │ ID513 │   2762 │ crit     │ 2023-03-12 18:55:37.896 │       2 │
+│ devankoshal │ daemon   │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID673 │   4051 │ crit     │ 2023-03-12 18:55:38.896 │       2 │
+│ jesseddy    │ uucp     │ random.de  │ Pretty pretty pretty good
+          │ ID757 │    535 │ warning  │ 2023-03-12 18:55:39.896 │       1 │
+│ devankoshal │ local4   │ up.net     │ #hugops to everyone who has to deal with this
+          │ ID526 │   7250 │ alert    │ 2023-03-12 18:55:40.896 │       2 │
+│ meln1ks     │ local2   │ we.de      │ Maybe we just shouldn't use computers
+          │ ID829 │   3511 │ debug    │ 2023-03-12 18:55:41.916 │       2 │
+│ meln1ks     │ ftp      │ random.de  │ We're gonna need a bigger boat
+          │ ID187 │    809 │ notice   │ 2023-03-12 18:55:42.896 │       2 │
+│ shaneIxD    │ local4   │ for.com    │ We're gonna need a bigger boat
+          │ ID347 │   9458 │ debug    │ 2023-03-12 18:55:43.896 │       2 │
+│ shaneIxD    │ local4   │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID405 │   7712 │ debug    │ 2023-03-12 18:55:44.902 │       1 │
+│ meln1ks     │ ntp      │ random.us  │ Maybe we just shouldn't use computers
+          │ ID973 │   7485 │ notice   │ 2023-03-12 18:55:45.896 │       2 │
+│ jesseddy    │ local7   │ up.com     │ Take a breath, let it go, walk away
+          │ ID581 │   1869 │ emerg    │ 2023-03-12 18:55:46.912 │       2 │
+│ jesseddy    │ local3   │ up.net     │ Take a breath, let it go, walk away
+          │ ID164 │   1671 │ err      │ 2023-03-12 18:55:47.896 │       2 │
+│ ahmadajmi   │ ftp      │ up.org     │ Take a breath, let it go, walk away
+          │ ID524 │   2372 │ emerg    │ 2023-03-12 18:55:48.896 │       2 │
+│ ahmadajmi   │ clockd   │ for.us     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID57  │   5610 │ notice   │ 2023-03-12 18:55:49.904 │       2 │
+│ benefritz   │ local6   │ names.de   │ #hugops to everyone who has to deal with this
+          │ ID190 │   8190 │ crit     │ 2023-03-12 18:55:50.896 │       1 │
+│ jesseddy    │ local5   │ up.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID85  │   2237 │ debug    │ 2023-03-12 18:55:51.896 │       1 │
+│ shaneIxD    │ local7   │ for.com    │ Maybe we just shouldn't use computers
+          │ ID864 │   8172 │ err      │ 2023-03-12 18:55:52.896 │       2 │
+│ devankoshal │ clockd   │ random.net │ Pretty pretty pretty good
+          │ ID267 │    667 │ warning  │ 2023-03-12 18:55:53.896 │       2 │
+│ meln1ks     │ local1   │ make.org   │ There's a breach in the warp core, captain
+          │ ID291 │   3865 │ warning  │ 2023-03-12 18:55:54.895 │       2 │
+│ meln1ks     │ local1   │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID184 │   6505 │ crit     │ 2023-03-12 18:55:55.899 │       1 │
+│ ahmadajmi   │ local1   │ we.org     │ Maybe we just shouldn't use computers
+          │ ID188 │   5488 │ alert    │ 2023-03-12 18:55:56.896 │       2 │
+│ meln1ks     │ ftp      │ for.com    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID711 │    674 │ notice   │ 2023-03-12 18:55:57.896 │       1 │
+│ meln1ks     │ local4   │ names.com  │ There's a breach in the warp core, captain
+          │ ID77  │   8216 │ info     │ 2023-03-12 18:55:58.898 │       1 │
+│ jesseddy    │ local2   │ up.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID614 │   5754 │ info     │ 2023-03-12 18:55:59.895 │       1 │
+│ shaneIxD    │ mail     │ names.com  │ We're gonna need a bigger boat
+          │ ID248 │   6721 │ err      │ 2023-03-12 18:56:00.895 │       2 │
+│ shaneIxD    │ uucp     │ random.net │ Pretty pretty pretty good
+          │ ID896 │   5715 │ alert    │ 2023-03-12 18:56:01.923 │       2 │
+│ Karimmove   │ mail     │ up.org     │ Take a breath, let it go, walk away
+          │ ID881 │   2909 │ err      │ 2023-03-12 18:56:02.896 │       2 │
+│ shaneIxD    │ local4   │ random.de  │ Pretty pretty pretty good
+          │ ID116 │    773 │ info     │ 2023-03-12 18:56:03.896 │       1 │
+│ benefritz   │ local0   │ make.org   │ You're not gonna believe what just happened
+          │ ID181 │   6235 │ warning  │ 2023-03-12 18:56:04.914 │       2 │
+│ jesseddy    │ kern     │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID767 │   2296 │ info     │ 2023-03-12 18:56:05.895 │       1 │
+│ benefritz   │ daemon   │ for.org    │ Maybe we just shouldn't use computers
+          │ ID618 │   6254 │ notice   │ 2023-03-12 18:56:06.896 │       2 │
+│ shaneIxD    │ lpr      │ for.us     │ Pretty pretty pretty good
+          │ ID92  │   4867 │ warning  │ 2023-03-12 18:56:07.896 │       1 │
+│ meln1ks     │ clockd   │ we.net     │ There's a breach in the warp core, captain
+          │ ID635 │   8669 │ crit     │ 2023-03-12 18:56:08.895 │       1 │
+│ benefritz   │ alert    │ random.net │ Take a breath, let it go, walk away
+          │ ID483 │   2599 │ emerg    │ 2023-03-12 18:56:09.896 │       2 │
+│ meln1ks     │ lpr      │ we.com     │ #hugops to everyone who has to deal with this
+          │ ID315 │   9700 │ emerg    │ 2023-03-12 18:56:10.901 │       1 │
+│ ahmadajmi   │ local0   │ some.org   │ You're not gonna believe what just happened
+          │ ID119 │   9672 │ crit     │ 2023-03-12 18:56:11.896 │       1 │
+│ jesseddy    │ user     │ make.de    │ Take a breath, let it go, walk away
+          │ ID398 │   5721 │ warning  │ 2023-03-12 18:56:12.895 │       2 │
+│ jesseddy    │ user     │ names.org  │ Take a breath, let it go, walk away
+          │ ID749 │   9293 │ err      │ 2023-03-12 18:56:13.902 │       2 │
+│ jesseddy    │ user     │ make.com   │ Pretty pretty pretty good
+          │ ID512 │   4557 │ warning  │ 2023-03-12 18:56:14.897 │       1 │
+│ Karimmove   │ clockd   │ for.org    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID213 │   7784 │ err      │ 2023-03-12 18:56:15.896 │       1 │
+│ devankoshal │ local5   │ up.us      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID491 │   4189 │ warning  │ 2023-03-12 18:56:16.911 │       1 │
+│ jesseddy    │ local1   │ up.us      │ Pretty pretty pretty good
+          │ ID990 │   9693 │ alert    │ 2023-03-12 18:56:17.896 │       2 │
+│ jesseddy    │ news     │ up.us      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID146 │   4881 │ notice   │ 2023-03-12 18:56:18.896 │       1 │
+│ jesseddy    │ news     │ some.net   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID508 │   5063 │ notice   │ 2023-03-12 18:56:19.897 │       1 │
+│ meln1ks     │ ftp      │ up.org     │ We're gonna need a bigger boat
+          │ ID293 │   1984 │ emerg    │ 2023-03-12 18:56:20.896 │       2 │
+│ meln1ks     │ alert    │ random.org │ Maybe we just shouldn't use computers
+          │ ID729 │   7551 │ emerg    │ 2023-03-12 18:56:21.930 │       2 │
+│ meln1ks     │ ntp      │ for.net    │ #hugops to everyone who has to deal with this
+          │ ID554 │   1871 │ alert    │ 2023-03-12 18:56:22.896 │       2 │
+│ Karimmove   │ mail     │ we.us      │ #hugops to everyone who has to deal with this
+          │ ID253 │   8991 │ warning  │ 2023-03-12 18:56:23.896 │       2 │
+│ meln1ks     │ news     │ names.us   │ Take a breath, let it go, walk away
+          │ ID823 │   8497 │ warning  │ 2023-03-12 18:56:24.907 │       2 │
+│ devankoshal │ user     │ for.org    │ #hugops to everyone who has to deal with this
+          │ ID291 │    326 │ info     │ 2023-03-12 18:56:25.896 │       1 │
+│ jesseddy    │ user     │ we.de      │ #hugops to everyone who has to deal with this
+          │ ID423 │   1154 │ notice   │ 2023-03-12 18:56:26.903 │       1 │
+│ ahmadajmi   │ alert    │ random.com │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID653 │   7054 │ err      │ 2023-03-12 18:56:27.896 │       2 │
+│ devankoshal │ ntp      │ we.us      │ We're gonna need a bigger boat
+          │ ID293 │   2808 │ err      │ 2023-03-12 18:56:28.898 │       2 │
+│ devankoshal │ mail     │ random.de  │ We're gonna need a bigger boat
+          │ ID346 │   5781 │ alert    │ 2023-03-12 18:56:29.896 │       1 │
+│ devankoshal │ local4   │ random.net │ We're gonna need a bigger boat
+          │ ID229 │    470 │ debug    │ 2023-03-12 18:56:30.896 │       2 │
+│ Karimmove   │ local3   │ for.com    │ Maybe we just shouldn't use computers
+          │ ID720 │   4722 │ emerg    │ 2023-03-12 18:56:31.896 │       1 │
+│ Karimmove   │ alert    │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID244 │   5149 │ crit     │ 2023-03-12 18:56:32.906 │       1 │
+│ shaneIxD    │ lpr      │ random.de  │ You're not gonna believe what just happened
+          │ ID660 │   4056 │ err      │ 2023-03-12 18:56:33.896 │       2 │
+│ Karimmove   │ kern     │ up.net     │ There's a breach in the warp core, captain
+          │ ID561 │   9223 │ info     │ 2023-03-12 18:56:34.903 │       1 │
+│ benefritz   │ news     │ make.us    │ Take a breath, let it go, walk away
+          │ ID347 │   3267 │ emerg    │ 2023-03-12 18:56:35.896 │       1 │
+│ benefritz   │ lpr      │ we.com     │ You're not gonna believe what just happened
+          │ ID590 │   1058 │ alert    │ 2023-03-12 18:56:36.921 │       2 │
+│ jesseddy    │ local2   │ random.us  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID346 │    400 │ crit     │ 2023-03-12 18:56:37.896 │       2 │
+│ shaneIxD    │ local0   │ names.com  │ You're not gonna believe what just happened
+          │ ID377 │   3104 │ alert    │ 2023-03-12 18:56:38.898 │       2 │
+│ meln1ks     │ local6   │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID771 │   7644 │ warning  │ 2023-03-12 18:56:39.896 │       2 │
+│ meln1ks     │ auth     │ some.com   │ #hugops to everyone who has to deal with this
+          │ ID40  │   4814 │ info     │ 2023-03-12 18:56:40.896 │       1 │
+│ meln1ks     │ audit    │ we.de      │ Maybe we just shouldn't use computers
+          │ ID163 │    510 │ notice   │ 2023-03-12 18:56:41.896 │       2 │
+│ devankoshal │ local1   │ up.net     │ Take a breath, let it go, walk away
+          │ ID763 │   8734 │ info     │ 2023-03-12 18:56:42.895 │       1 │
+│ ahmadajmi   │ auth     │ make.net   │ Pretty pretty pretty good
+          │ ID563 │   5675 │ err      │ 2023-03-12 18:56:43.897 │       1 │
+│ devankoshal │ news     │ up.com     │ We're gonna need a bigger boat
+          │ ID880 │   5465 │ debug    │ 2023-03-12 18:56:44.896 │       2 │
+│ benefritz   │ uucp     │ make.org   │ Maybe we just shouldn't use computers
+          │ ID242 │   1262 │ err      │ 2023-03-12 18:56:45.919 │       1 │
+│ jesseddy    │ audit    │ up.us      │ Take a breath, let it go, walk away
+          │ ID394 │   6388 │ err      │ 2023-03-12 18:56:46.957 │       1 │
+│ devankoshal │ local2   │ we.net     │ There's a breach in the warp core, captain
+          │ ID539 │   8720 │ warning  │ 2023-03-12 18:56:47.896 │       2 │
+│ devankoshal │ local7   │ names.net  │ There's a breach in the warp core, captain
+          │ ID209 │   2263 │ warning  │ 2023-03-12 18:56:48.896 │       2 │
+│ meln1ks     │ clockd   │ names.com  │ #hugops to everyone who has to deal with this
+          │ ID909 │   2576 │ notice   │ 2023-03-12 18:56:49.896 │       1 │
+│ meln1ks     │ mail     │ for.us     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID644 │   1332 │ alert    │ 2023-03-12 18:56:50.955 │       2 │
+│ benefritz   │ local2   │ make.org   │ Pretty pretty pretty good
+          │ ID222 │    391 │ info     │ 2023-03-12 18:56:51.896 │       1 │
+│ ahmadajmi   │ local6   │ up.de      │ Take a breath, let it go, walk away
+          │ ID200 │   3289 │ alert    │ 2023-03-12 18:56:52.896 │       2 │
+│ benefritz   │ syslog   │ make.net   │ Maybe we just shouldn't use computers
+          │ ID911 │    604 │ info     │ 2023-03-12 18:56:53.905 │       1 │
+│ devankoshal │ mail     │ names.us   │ #hugops to everyone who has to deal with this
+          │ ID554 │   6618 │ err      │ 2023-03-12 18:56:54.895 │       1 │
+│ ahmadajmi   │ daemon   │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID670 │   8405 │ debug    │ 2023-03-12 18:56:55.896 │       2 │
+│ meln1ks     │ news     │ up.org     │ You're not gonna believe what just happened
+          │ ID366 │   9979 │ notice   │ 2023-03-12 18:56:56.896 │       2 │
+│ meln1ks     │ local3   │ names.net  │ There's a breach in the warp core, captain
+          │ ID131 │   1551 │ debug    │ 2023-03-12 18:56:57.896 │       1 │
+│ ahmadajmi   │ alert    │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID700 │   6777 │ debug    │ 2023-03-12 18:56:58.897 │       2 │
+│ meln1ks     │ alert    │ make.org   │ Maybe we just shouldn't use computers
+          │ ID326 │   7031 │ info     │ 2023-03-12 18:56:59.896 │       1 │
+│ shaneIxD    │ syslog   │ make.org   │ Take a breath, let it go, walk away
+          │ ID601 │   1213 │ notice   │ 2023-03-12 18:57:00.951 │       2 │
+│ Karimmove   │ local3   │ make.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID431 │   9568 │ warning  │ 2023-03-12 18:57:01.896 │       1 │
+│ benefritz   │ alert    │ names.net  │ Take a breath, let it go, walk away
+          │ ID909 │   2141 │ err      │ 2023-03-12 18:57:02.896 │       2 │
+│ meln1ks     │ local6   │ we.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID699 │   2190 │ warning  │ 2023-03-12 18:57:03.896 │       2 │
+│ devankoshal │ local6   │ make.de    │ Take a breath, let it go, walk away
+          │ ID322 │   7425 │ alert    │ 2023-03-12 18:57:04.895 │       1 │
+│ ahmadajmi   │ news     │ make.de    │ Maybe we just shouldn't use computers
+          │ ID616 │   9065 │ debug    │ 2023-03-12 18:57:05.896 │       2 │
+│ benefritz   │ local3   │ up.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID665 │   8020 │ warning  │ 2023-03-12 18:57:06.903 │       2 │
+│ Karimmove   │ kern     │ we.net     │ We're gonna need a bigger boat
+          │ ID850 │   9163 │ info     │ 2023-03-12 18:57:07.897 │       2 │
+│ devankoshal │ ntp      │ for.org    │ You're not gonna believe what just happened
+          │ ID987 │   8661 │ info     │ 2023-03-12 18:57:08.895 │       2 │
+│ ahmadajmi   │ uucp     │ we.com     │ Take a breath, let it go, walk away
+          │ ID531 │   8121 │ notice   │ 2023-03-12 18:57:09.906 │       2 │
+│ Karimmove   │ alert    │ for.us     │ Pretty pretty pretty good
+          │ ID495 │   2468 │ warning  │ 2023-03-12 18:57:10.897 │       1 │
+│ ahmadajmi   │ audit    │ random.com │ #hugops to everyone who has to deal with this
+          │ ID98  │   3790 │ info     │ 2023-03-12 18:57:11.896 │       2 │
+│ devankoshal │ local4   │ some.com   │ #hugops to everyone who has to deal with this
+          │ ID569 │   1499 │ warning  │ 2023-03-12 18:57:12.895 │       2 │
+│ shaneIxD    │ uucp     │ for.com    │ We're gonna need a bigger boat
+          │ ID618 │   1512 │ info     │ 2023-03-12 18:57:13.896 │       2 │
+│ jesseddy    │ local1   │ random.com │ We're gonna need a bigger boat
+          │ ID843 │   1819 │ debug    │ 2023-03-12 18:57:14.961 │       2 │
+│ shaneIxD    │ authpriv │ we.de      │ You're not gonna believe what just happened
+          │ ID504 │   7953 │ warning  │ 2023-03-12 18:57:15.936 │       2 │
+│ devankoshal │ authpriv │ up.net     │ Maybe we just shouldn't use computers
+          │ ID86  │   1528 │ notice   │ 2023-03-12 18:57:16.895 │       1 │
+│ benefritz   │ cron     │ we.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID801 │   5372 │ warning  │ 2023-03-12 18:57:17.902 │       2 │
+│ Karimmove   │ mail     │ up.com     │ You're not gonna believe what just happened
+          │ ID286 │   2333 │ debug    │ 2023-03-12 18:57:18.969 │       1 │
+│ devankoshal │ cron     │ names.us   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID882 │   4118 │ debug    │ 2023-03-12 18:57:19.896 │       1 │
+│ ahmadajmi   │ local5   │ some.de    │ #hugops to everyone who has to deal with this
+          │ ID198 │   8259 │ debug    │ 2023-03-12 18:57:20.924 │       2 │
+│ jesseddy    │ authpriv │ we.com     │ #hugops to everyone who has to deal with this
+          │ ID278 │   6778 │ crit     │ 2023-03-12 18:57:21.912 │       1 │
+│ Karimmove   │ ntp      │ names.de   │ You're not gonna believe what just happened
+          │ ID961 │   2833 │ notice   │ 2023-03-12 18:57:22.896 │       2 │
+│ benefritz   │ local0   │ we.net     │ There's a breach in the warp core, captain
+          │ ID392 │   6569 │ info     │ 2023-03-12 18:57:23.896 │       2 │
+│ Karimmove   │ uucp     │ some.us    │ You're not gonna believe what just happened
+          │ ID322 │   6628 │ alert    │ 2023-03-12 18:57:24.896 │       2 │
+│ shaneIxD    │ local0   │ names.org  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID751 │   8198 │ info     │ 2023-03-12 18:57:25.899 │       2 │
+│ jesseddy    │ cron     │ for.org    │ There's a breach in the warp core, captain
+          │ ID379 │   5831 │ warning  │ 2023-03-12 18:57:26.896 │       2 │
+│ meln1ks     │ local1   │ up.net     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID50  │   3734 │ err      │ 2023-03-12 18:57:27.896 │       2 │
+│ jesseddy    │ syslog   │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID642 │   8689 │ notice   │ 2023-03-12 18:57:28.896 │       2 │
+│ Karimmove   │ local1   │ make.org   │ Pretty pretty pretty good
+          │ ID194 │   6960 │ debug    │ 2023-03-12 18:57:29.904 │       1 │
+│ ahmadajmi   │ mail     │ for.us     │ We're gonna need a bigger boat
+          │ ID141 │   7825 │ debug    │ 2023-03-12 18:57:30.901 │       2 │
+│ ahmadajmi   │ user     │ for.com    │ Maybe we just shouldn't use computers
+          │ ID961 │   9477 │ debug    │ 2023-03-12 18:57:31.896 │       2 │
+│ shaneIxD    │ local0   │ random.org │ There's a breach in the warp core, captain
+          │ ID802 │    315 │ warning  │ 2023-03-12 18:57:32.907 │       1 │
+│ ahmadajmi   │ authpriv │ make.de    │ There's a breach in the warp core, captain
+          │ ID81  │   1310 │ info     │ 2023-03-12 18:57:33.899 │       2 │
+│ devankoshal │ ftp      │ we.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID71  │   2766 │ alert    │ 2023-03-12 18:57:34.895 │       1 │
+│ ahmadajmi   │ local4   │ make.de    │ We're gonna need a bigger boat
+          │ ID306 │   5461 │ emerg    │ 2023-03-12 18:57:35.896 │       2 │
+│ meln1ks     │ uucp     │ names.net  │ Take a breath, let it go, walk away
+          │ ID612 │    618 │ debug    │ 2023-03-12 18:57:36.896 │       1 │
+│ jesseddy    │ ftp      │ make.com   │ Take a breath, let it go, walk away
+          │ ID705 │   8509 │ notice   │ 2023-03-12 18:57:37.897 │       2 │
+│ benefritz   │ clockd   │ names.com  │ There's a breach in the warp core, captain
+          │ ID910 │   7229 │ debug    │ 2023-03-12 18:57:38.896 │       2 │
+│ jesseddy    │ local5   │ names.net  │ Take a breath, let it go, walk away
+          │ ID175 │    142 │ warning  │ 2023-03-12 18:57:39.896 │       1 │
+│ Karimmove   │ cron     │ names.com  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID285 │    488 │ alert    │ 2023-03-12 18:57:40.896 │       2 │
+│ ahmadajmi   │ cron     │ for.org    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID727 │   4667 │ emerg    │ 2023-03-12 18:57:41.896 │       1 │
+│ benefritz   │ lpr      │ names.de   │ You're not gonna believe what just happened
+          │ ID891 │   5245 │ emerg    │ 2023-03-12 18:57:42.900 │       2 │
+│ jesseddy    │ clockd   │ random.com │ Maybe we just shouldn't use computers
+          │ ID590 │   4262 │ alert    │ 2023-03-12 18:57:43.896 │       1 │
+│ meln1ks     │ local0   │ random.com │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID273 │   4680 │ emerg    │ 2023-03-12 18:57:44.896 │       2 │
+│ jesseddy    │ syslog   │ names.net  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID734 │    404 │ emerg    │ 2023-03-12 18:57:45.896 │       2 │
+│ ahmadajmi   │ local0   │ random.net │ You're not gonna believe what just happened
+          │ ID372 │   6670 │ emerg    │ 2023-03-12 18:57:46.896 │       1 │
+│ meln1ks     │ kern     │ for.com    │ We're gonna need a bigger boat
+          │ ID940 │   6320 │ warning  │ 2023-03-12 18:57:47.896 │       1 │
+│ ahmadajmi   │ authpriv │ names.net  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID151 │   5484 │ err      │ 2023-03-12 18:57:48.896 │       2 │
+│ jesseddy    │ syslog   │ random.us  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID807 │   3592 │ debug    │ 2023-03-12 18:57:49.926 │       1 │
+│ shaneIxD    │ cron     │ random.de  │ Pretty pretty pretty good
+          │ ID971 │   3067 │ notice   │ 2023-03-12 18:57:50.896 │       2 │
+│ devankoshal │ local1   │ random.org │ #hugops to everyone who has to deal with this
+          │ ID325 │   1020 │ notice   │ 2023-03-12 18:57:51.896 │       2 │
+│ meln1ks     │ local0   │ for.org    │ Take a breath, let it go, walk away
+          │ ID153 │   6477 │ alert    │ 2023-03-12 18:57:52.895 │       1 │
+│ meln1ks     │ alert    │ up.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID383 │   6983 │ info     │ 2023-03-12 18:57:53.896 │       1 │
+│ Karimmove   │ syslog   │ random.org │ #hugops to everyone who has to deal with this
+          │ ID732 │   8869 │ alert    │ 2023-03-12 18:57:54.902 │       1 │
+│ Karimmove   │ kern     │ for.us     │ #hugops to everyone who has to deal with this
+          │ ID747 │   8574 │ crit     │ 2023-03-12 18:57:55.896 │       2 │
+│ Karimmove   │ local3   │ we.us      │ Take a breath, let it go, walk away
+          │ ID699 │   1606 │ info     │ 2023-03-12 18:57:56.895 │       2 │
+│ devankoshal │ local4   │ for.us     │ You're not gonna believe what just happened
+          │ ID819 │   7005 │ emerg    │ 2023-03-12 18:57:57.905 │       2 │
+│ ahmadajmi   │ news     │ we.de      │ We're gonna need a bigger boat
+          │ ID856 │   4338 │ notice   │ 2023-03-12 18:57:58.895 │       1 │
+│ jesseddy    │ clockd   │ up.net     │ Maybe we just shouldn't use computers
+          │ ID621 │   2593 │ emerg    │ 2023-03-12 18:57:59.896 │       1 │
+│ shaneIxD    │ local3   │ names.us   │ Pretty pretty pretty good
+          │ ID394 │   5235 │ err      │ 2023-03-12 18:58:00.897 │       1 │
+│ shaneIxD    │ auth     │ names.org  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID668 │   4215 │ err      │ 2023-03-12 18:58:01.896 │       1 │
+│ shaneIxD    │ alert    │ some.org   │ We're gonna need a bigger boat
+          │ ID685 │    989 │ crit     │ 2023-03-12 18:58:02.896 │       2 │
+│ shaneIxD    │ uucp     │ make.net   │ There's a breach in the warp core, captain
+          │ ID261 │   8225 │ notice   │ 2023-03-12 18:58:03.896 │       1 │
+│ benefritz   │ kern     │ we.de      │ #hugops to everyone who has to deal with this
+          │ ID384 │    527 │ emerg    │ 2023-03-12 18:58:04.898 │       1 │
+│ devankoshal │ local1   │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID751 │   1175 │ err      │ 2023-03-12 18:58:05.935 │       1 │
+│ Karimmove   │ local3   │ up.de      │ Take a breath, let it go, walk away
+          │ ID317 │   9146 │ alert    │ 2023-03-12 18:58:06.896 │       1 │
+│ shaneIxD    │ ntp      │ make.net   │ Pretty pretty pretty good
+          │ ID16  │   5931 │ info     │ 2023-03-12 18:58:07.896 │       1 │
+│ ahmadajmi   │ local6   │ some.com   │ Pretty pretty pretty good
+          │ ID745 │    206 │ err      │ 2023-03-12 18:58:08.899 │       1 │
+│ benefritz   │ clockd   │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID936 │    954 │ err      │ 2023-03-12 18:58:09.897 │       2 │
+│ meln1ks     │ local1   │ names.org  │ #hugops to everyone who has to deal with this
+          │ ID884 │   8151 │ alert    │ 2023-03-12 18:58:10.896 │       1 │
+│ benefritz   │ mail     │ we.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID793 │   2543 │ info     │ 2023-03-12 18:58:11.896 │       1 │
+│ jesseddy    │ local6   │ random.de  │ #hugops to everyone who has to deal with this
+          │ ID656 │   2881 │ notice   │ 2023-03-12 18:58:12.896 │       2 │
+│ jesseddy    │ user     │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID843 │   5729 │ info     │ 2023-03-12 18:58:13.896 │       1 │
+│ Karimmove   │ local7   │ names.org  │ There's a breach in the warp core, captain
+          │ ID544 │   8414 │ alert    │ 2023-03-12 18:58:14.896 │       2 │
+│ shaneIxD    │ lpr      │ random.de  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID247 │    513 │ debug    │ 2023-03-12 18:58:15.896 │       2 │
+│ Karimmove   │ audit    │ make.us    │ You're not gonna believe what just happened
+          │ ID34  │   7605 │ crit     │ 2023-03-12 18:58:16.898 │       1 │
+│ Karimmove   │ auth     │ we.org     │ There's a breach in the warp core, captain
+          │ ID807 │   2840 │ info     │ 2023-03-12 18:58:17.896 │       1 │
+│ ahmadajmi   │ ftp      │ make.org   │ Take a breath, let it go, walk away
+          │ ID44  │   1731 │ warning  │ 2023-03-12 18:58:18.896 │       2 │
+│ Karimmove   │ local4   │ for.org    │ Pretty pretty pretty good
+          │ ID193 │   4639 │ emerg    │ 2023-03-12 18:58:19.896 │       2 │
+│ devankoshal │ authpriv │ up.de      │ Pretty pretty pretty good
+          │ ID202 │    199 │ debug    │ 2023-03-12 18:58:20.896 │       1 │
+│ devankoshal │ lpr      │ for.com    │ Take a breath, let it go, walk away
+          │ ID836 │   1923 │ emerg    │ 2023-03-12 18:58:21.926 │       1 │
+│ ahmadajmi   │ daemon   │ for.com    │ Take a breath, let it go, walk away
+          │ ID679 │   9816 │ notice   │ 2023-03-12 18:58:22.895 │       2 │
+│ devankoshal │ ftp      │ make.us    │ We're gonna need a bigger boat
+          │ ID425 │   5055 │ err      │ 2023-03-12 18:58:23.896 │       1 │
+│ devankoshal │ local6   │ names.com  │ Take a breath, let it go, walk away
+          │ ID868 │   9092 │ crit     │ 2023-03-12 18:58:24.909 │       1 │
+│ Karimmove   │ local7   │ random.us  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID319 │   3216 │ alert    │ 2023-03-12 18:58:25.896 │       1 │
+│ benefritz   │ user     │ make.us    │ Maybe we just shouldn't use computers
+          │ ID995 │   7538 │ debug    │ 2023-03-12 18:58:26.896 │       2 │
+│ benefritz   │ alert    │ random.com │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID422 │   9930 │ notice   │ 2023-03-12 18:58:27.896 │       1 │
+│ Karimmove   │ local0   │ names.us   │ There's a breach in the warp core, captain
+          │ ID83  │   1370 │ alert    │ 2023-03-12 18:58:28.896 │       2 │
+│ ahmadajmi   │ uucp     │ for.de     │ Pretty pretty pretty good
+          │ ID252 │   5831 │ alert    │ 2023-03-12 18:58:29.907 │       1 │
+│ benefritz   │ local1   │ for.de     │ There's a breach in the warp core, captain
+          │ ID978 │    632 │ err      │ 2023-03-12 18:58:30.896 │       2 │
+│ jesseddy    │ alert    │ for.org    │ There's a breach in the warp core, captain
+          │ ID123 │   8754 │ debug    │ 2023-03-12 18:58:31.896 │       2 │
+│ shaneIxD    │ authpriv │ random.de  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID652 │   4365 │ crit     │ 2023-03-12 18:58:32.895 │       1 │
+│ Karimmove   │ daemon   │ random.org │ Maybe we just shouldn't use computers
+          │ ID664 │   6330 │ notice   │ 2023-03-12 18:58:33.936 │       2 │
+│ ahmadajmi   │ local0   │ some.de    │ Take a breath, let it go, walk away
+          │ ID753 │   6874 │ info     │ 2023-03-12 18:58:34.895 │       2 │
+│ benefritz   │ local4   │ up.us      │ Take a breath, let it go, walk away
+          │ ID64  │   3513 │ info     │ 2023-03-12 18:58:35.896 │       1 │
+│ shaneIxD    │ local7   │ we.org     │ Take a breath, let it go, walk away
+          │ ID857 │   8236 │ alert    │ 2023-03-12 18:58:36.896 │       2 │
+│ jesseddy    │ local6   │ some.net   │ There's a breach in the warp core, captain
+          │ ID197 │   7639 │ err      │ 2023-03-12 18:58:37.896 │       2 │
+│ jesseddy    │ cron     │ names.us   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID888 │   5940 │ notice   │ 2023-03-12 18:58:38.895 │       2 │
+│ ahmadajmi   │ news     │ random.de  │ We're gonna need a bigger boat
+          │ ID736 │    180 │ alert    │ 2023-03-12 18:58:39.925 │       1 │
+│ shaneIxD    │ cron     │ up.us      │ You're not gonna believe what just happened
+          │ ID159 │   1641 │ warning  │ 2023-03-12 18:58:40.898 │       1 │
+│ meln1ks     │ clockd   │ make.com   │ You're not gonna believe what just happened
+          │ ID549 │    637 │ info     │ 2023-03-12 18:58:41.934 │       1 │
+│ meln1ks     │ auth     │ random.de  │ There's a breach in the warp core, captain
+          │ ID189 │   6868 │ notice   │ 2023-03-12 18:58:42.895 │       2 │
+│ shaneIxD    │ local5   │ names.org  │ Pretty pretty pretty good
+          │ ID714 │   8744 │ notice   │ 2023-03-12 18:58:43.896 │       2 │
+│ benefritz   │ clockd   │ some.us    │ #hugops to everyone who has to deal with this
+          │ ID36  │   8372 │ emerg    │ 2023-03-12 18:58:44.907 │       1 │
+│ devankoshal │ mail     │ random.org │ There's a breach in the warp core, captain
+          │ ID727 │   4645 │ alert    │ 2023-03-12 18:58:45.896 │       2 │
+│ jesseddy    │ uucp     │ we.net     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID250 │   5662 │ warning  │ 2023-03-12 18:58:46.896 │       1 │
+│ devankoshal │ auth     │ up.net     │ You're not gonna believe what just happened
+          │ ID735 │   2175 │ err      │ 2023-03-12 18:58:47.896 │       2 │
+│ meln1ks     │ local6   │ some.com   │ Maybe we just shouldn't use computers
+          │ ID370 │   9083 │ info     │ 2023-03-12 18:58:48.896 │       1 │
+│ Karimmove   │ ftp      │ up.net     │ Take a breath, let it go, walk away
+          │ ID746 │   9402 │ emerg    │ 2023-03-12 18:58:49.896 │       1 │
+│ benefritz   │ local5   │ random.org │ Maybe we just shouldn't use computers
+          │ ID738 │   7279 │ debug    │ 2023-03-12 18:58:50.911 │       1 │
+│ ahmadajmi   │ alert    │ up.us      │ You're not gonna believe what just happened
+          │ ID967 │   2107 │ debug    │ 2023-03-12 18:58:51.902 │       1 │
+│ Karimmove   │ audit    │ names.us   │ You're not gonna believe what just happened
+          │ ID167 │   1177 │ emerg    │ 2023-03-12 18:58:52.896 │       1 │
+│ jesseddy    │ local2   │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID860 │   6468 │ notice   │ 2023-03-12 18:58:53.896 │       2 │
+│ Karimmove   │ alert    │ some.com   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID950 │   3241 │ crit     │ 2023-03-12 18:58:54.896 │       2 │
+│ shaneIxD    │ authpriv │ for.net    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID924 │   6194 │ crit     │ 2023-03-12 18:58:55.901 │       2 │
+│ jesseddy    │ daemon   │ we.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID228 │   4654 │ info     │ 2023-03-12 18:58:56.896 │       1 │
+│ jesseddy    │ syslog   │ some.net   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID725 │   4071 │ notice   │ 2023-03-12 18:58:57.896 │       1 │
+│ devankoshal │ uucp     │ for.net    │ Take a breath, let it go, walk away
+          │ ID622 │   2244 │ warning  │ 2023-03-12 18:58:58.901 │       1 │
+│ Karimmove   │ local5   │ we.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID854 │   4719 │ debug    │ 2023-03-12 18:58:59.896 │       2 │
+│ benefritz   │ syslog   │ random.us  │ There's a breach in the warp core, captain
+          │ ID644 │    901 │ crit     │ 2023-03-12 18:59:00.920 │       1 │
+│ benefritz   │ user     │ for.us     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID33  │   4114 │ info     │ 2023-03-12 18:59:01.896 │       2 │
+│ devankoshal │ local2   │ names.org  │ Take a breath, let it go, walk away
+          │ ID730 │   9351 │ debug    │ 2023-03-12 18:59:02.895 │       1 │
+│ devankoshal │ cron     │ some.net   │ We're gonna need a bigger boat
+          │ ID535 │   8537 │ err      │ 2023-03-12 18:59:03.895 │       2 │
+│ devankoshal │ user     │ make.us    │ We're gonna need a bigger boat
+          │ ID488 │   6525 │ emerg    │ 2023-03-12 18:59:04.899 │       2 │
+│ shaneIxD    │ user     │ random.us  │ There's a breach in the warp core, captain
+          │ ID256 │   1478 │ alert    │ 2023-03-12 18:59:05.896 │       2 │
+│ Karimmove   │ clockd   │ random.org │ #hugops to everyone who has to deal with this
+          │ ID407 │   7324 │ info     │ 2023-03-12 18:59:06.896 │       1 │
+│ benefritz   │ local3   │ random.de  │ We're gonna need a bigger boat
+          │ ID715 │   5883 │ alert    │ 2023-03-12 18:59:07.896 │       1 │
+│ ahmadajmi   │ ntp      │ random.com │ #hugops to everyone who has to deal with this
+          │ ID522 │   4763 │ err      │ 2023-03-12 18:59:08.895 │       2 │
+│ devankoshal │ audit    │ for.us     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID483 │   8235 │ emerg    │ 2023-03-12 18:59:09.896 │       2 │
+│ jesseddy    │ ftp      │ we.us      │ Take a breath, let it go, walk away
+          │ ID15  │    985 │ notice   │ 2023-03-12 18:59:10.900 │       1 │
+│ benefritz   │ cron     │ random.org │ Take a breath, let it go, walk away
+          │ ID713 │   5346 │ debug    │ 2023-03-12 18:59:11.896 │       2 │
+│ meln1ks     │ local3   │ for.com    │ There's a breach in the warp core, captain
+          │ ID83  │    261 │ warning  │ 2023-03-12 18:59:12.896 │       2 │
+│ jesseddy    │ cron     │ up.net     │ There's a breach in the warp core, captain
+          │ ID297 │   4374 │ emerg    │ 2023-03-12 18:59:13.896 │       2 │
+│ Karimmove   │ kern     │ for.de     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID389 │   5119 │ crit     │ 2023-03-12 18:59:14.896 │       2 │
+│ benefritz   │ syslog   │ we.org     │ Maybe we just shouldn't use computers
+          │ ID233 │   3184 │ err      │ 2023-03-12 18:59:15.896 │       2 │
+│ jesseddy    │ local6   │ some.us    │ You're not gonna believe what just happened
+          │ ID723 │   8840 │ notice   │ 2023-03-12 18:59:16.897 │       2 │
+│ shaneIxD    │ auth     │ we.us      │ We're gonna need a bigger boat
+          │ ID621 │   6808 │ warning  │ 2023-03-12 18:59:17.905 │       1 │
+│ meln1ks     │ local3   │ make.us    │ #hugops to everyone who has to deal with this
+          │ ID863 │   6834 │ err      │ 2023-03-12 18:59:18.896 │       2 │
+│ benefritz   │ authpriv │ we.de      │ There's a breach in the warp core, captain
+          │ ID109 │   1542 │ emerg    │ 2023-03-12 18:59:19.896 │       2 │
+│ jesseddy    │ local3   │ random.net │ There's a breach in the warp core, captain
+          │ ID613 │   4863 │ warning  │ 2023-03-12 18:59:20.895 │       2 │
+│ benefritz   │ local0   │ some.de    │ Pretty pretty pretty good
+          │ ID278 │   9134 │ crit     │ 2023-03-12 18:59:21.896 │       1 │
+│ devankoshal │ audit    │ make.com   │ Maybe we just shouldn't use computers
+          │ ID741 │    930 │ alert    │ 2023-03-12 18:59:22.896 │       2 │
+│ Karimmove   │ daemon   │ random.us  │ Take a breath, let it go, walk away
+          │ ID454 │   6547 │ alert    │ 2023-03-12 18:59:23.902 │       2 │
+│ devankoshal │ clockd   │ for.org    │ Pretty pretty pretty good
+          │ ID691 │   9034 │ alert    │ 2023-03-12 18:59:24.896 │       2 │
+│ shaneIxD    │ lpr      │ we.de      │ Take a breath, let it go, walk away
+          │ ID457 │   3709 │ err      │ 2023-03-12 18:59:25.915 │       1 │
+│ shaneIxD    │ kern     │ we.de      │ #hugops to everyone who has to deal with this
+          │ ID467 │   7201 │ warning  │ 2023-03-12 18:59:26.896 │       1 │
+│ benefritz   │ local7   │ up.de      │ You're not gonna believe what just happened
+          │ ID159 │   4995 │ notice   │ 2023-03-12 18:59:27.896 │       2 │
+│ meln1ks     │ alert    │ make.net   │ Maybe we just shouldn't use computers
+          │ ID199 │   2300 │ info     │ 2023-03-12 18:59:28.897 │       2 │
+│ jesseddy    │ local2   │ random.us  │ We're gonna need a bigger boat
+          │ ID738 │   5009 │ warning  │ 2023-03-12 18:59:29.895 │       2 │
+│ jesseddy    │ local4   │ random.us  │ You're not gonna believe what just happened
+          │ ID893 │   7853 │ info     │ 2023-03-12 18:59:30.895 │       1 │
+│ Karimmove   │ local5   │ random.net │ We're gonna need a bigger boat
+          │ ID483 │   2728 │ info     │ 2023-03-12 18:59:31.896 │       2 │
+│ Karimmove   │ ftp      │ for.net    │ Take a breath, let it go, walk away
+          │ ID726 │   1298 │ alert    │ 2023-03-12 18:59:32.896 │       1 │
+│ jesseddy    │ ntp      │ names.net  │ Pretty pretty pretty good
+          │ ID151 │   8131 │ notice   │ 2023-03-12 18:59:33.897 │       1 │
+│ ahmadajmi   │ news     │ for.org    │ We're gonna need a bigger boat
+          │ ID86  │   3134 │ emerg    │ 2023-03-12 18:59:34.896 │       2 │
+│ devankoshal │ authpriv │ up.org     │ There's a breach in the warp core, captain
+          │ ID492 │   9728 │ alert    │ 2023-03-12 18:59:35.896 │       2 │
+│ devankoshal │ user     │ up.us      │ You're not gonna believe what just happened
+          │ ID564 │   2416 │ emerg    │ 2023-03-12 18:59:36.907 │       1 │
+│ meln1ks     │ kern     │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID617 │   6695 │ alert    │ 2023-03-12 18:59:37.903 │       1 │
+│ jesseddy    │ ntp      │ names.us   │ There's a breach in the warp core, captain
+          │ ID262 │   1521 │ err      │ 2023-03-12 18:59:38.896 │       2 │
+│ shaneIxD    │ cron     │ for.net    │ Maybe we just shouldn't use computers
+          │ ID590 │    273 │ crit     │ 2023-03-12 18:59:39.912 │       2 │
+│ shaneIxD    │ ftp      │ some.de    │ You're not gonna believe what just happened
+          │ ID633 │   3190 │ emerg    │ 2023-03-12 18:59:40.896 │       1 │
+│ ahmadajmi   │ local0   │ for.de     │ We're gonna need a bigger boat
+          │ ID596 │   6552 │ notice   │ 2023-03-12 18:59:41.896 │       2 │
+│ devankoshal │ local1   │ make.us    │ Maybe we just shouldn't use computers
+          │ ID343 │    660 │ alert    │ 2023-03-12 18:59:42.907 │       1 │
+│ jesseddy    │ clockd   │ up.com     │ Pretty pretty pretty good
+          │ ID221 │   6290 │ alert    │ 2023-03-12 18:59:43.896 │       1 │
+│ Karimmove   │ audit    │ up.us      │ There's a breach in the warp core, captain
+          │ ID849 │   3625 │ err      │ 2023-03-12 18:59:44.896 │       1 │
+│ meln1ks     │ ntp      │ random.de  │ Take a breath, let it go, walk away
+          │ ID194 │   8878 │ emerg    │ 2023-03-12 18:59:45.902 │       2 │
+│ ahmadajmi   │ local1   │ for.de     │ #hugops to everyone who has to deal with this
+          │ ID724 │   6312 │ warning  │ 2023-03-12 18:59:46.896 │       1 │
+│ Karimmove   │ syslog   │ for.de     │ #hugops to everyone who has to deal with this
+          │ ID85  │    912 │ crit     │ 2023-03-12 18:59:47.896 │       2 │
+│ ahmadajmi   │ news     │ random.org │ We're gonna need a bigger boat
+          │ ID319 │   7771 │ debug    │ 2023-03-12 18:59:48.905 │       2 │
+│ devankoshal │ local5   │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID34  │   8199 │ crit     │ 2023-03-12 18:59:49.936 │       1 │
+│ benefritz   │ auth     │ up.de      │ Maybe we just shouldn't use computers
+          │ ID737 │   5092 │ debug    │ 2023-03-12 18:59:50.896 │       1 │
+│ benefritz   │ local0   │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID31  │   7462 │ emerg    │ 2023-03-12 18:59:51.896 │       1 │
+│ meln1ks     │ news     │ names.de   │ You're not gonna believe what just happened
+          │ ID810 │   5702 │ emerg    │ 2023-03-12 18:59:52.896 │       1 │
+│ jesseddy    │ mail     │ some.com   │ #hugops to everyone who has to deal with this
+          │ ID628 │   2151 │ notice   │ 2023-03-12 18:59:53.910 │       2 │
+│ Karimmove   │ ftp      │ names.com  │ #hugops to everyone who has to deal with this
+          │ ID781 │   3346 │ notice   │ 2023-03-12 18:59:54.896 │       2 │
+│ devankoshal │ news     │ random.org │ #hugops to everyone who has to deal with this
+          │ ID232 │   4753 │ crit     │ 2023-03-12 18:59:55.896 │       1 │
+│ meln1ks     │ mail     │ names.org  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID826 │   4624 │ info     │ 2023-03-12 18:59:56.896 │       2 │
+│ benefritz   │ local0   │ some.net   │ Take a breath, let it go, walk away
+          │ ID380 │    628 │ info     │ 2023-03-12 18:59:57.896 │       1 │
+│ ahmadajmi   │ local2   │ some.org   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID323 │   5763 │ alert    │ 2023-03-12 18:59:58.896 │       1 │
+│ Karimmove   │ local3   │ up.org     │ Pretty pretty pretty good
+          │ ID397 │   9559 │ err      │ 2023-03-12 18:59:59.896 │       2 │
+│ jesseddy    │ news     │ up.net     │ #hugops to everyone who has to deal with this
+          │ ID77  │   4026 │ emerg    │ 2023-03-12 19:00:00.904 │       1 │
+│ ahmadajmi   │ local0   │ some.com   │ Pretty pretty pretty good
+          │ ID409 │   5264 │ alert    │ 2023-03-12 19:00:01.896 │       2 │
+│ devankoshal │ authpriv │ make.us    │ We're gonna need a bigger boat
+          │ ID136 │   4237 │ notice   │ 2023-03-12 19:00:02.896 │       2 │
+│ shaneIxD    │ uucp     │ names.us   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID765 │   8542 │ warning  │ 2023-03-12 19:00:03.896 │       1 │
+│ Karimmove   │ cron     │ up.de      │ #hugops to everyone who has to deal with this
+          │ ID765 │   1470 │ err      │ 2023-03-12 19:00:04.895 │       2 │
+│ Karimmove   │ user     │ up.us      │ We're gonna need a bigger boat
+          │ ID441 │   4058 │ crit     │ 2023-03-12 19:00:05.896 │       2 │
+│ devankoshal │ kern     │ make.org   │ #hugops to everyone who has to deal with this
+          │ ID584 │   7908 │ warning  │ 2023-03-12 19:00:06.897 │       1 │
+│ meln1ks     │ daemon   │ we.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID939 │   8176 │ info     │ 2023-03-12 19:00:07.896 │       2 │
+│ ahmadajmi   │ local3   │ make.net   │ Take a breath, let it go, walk away
+          │ ID466 │   1803 │ emerg    │ 2023-03-12 19:00:08.896 │       1 │
+│ shaneIxD    │ news     │ we.de      │ We're gonna need a bigger boat
+          │ ID805 │   4956 │ notice   │ 2023-03-12 19:00:09.897 │       2 │
+│ shaneIxD    │ local6   │ we.de      │ Pretty pretty pretty good
+          │ ID133 │    450 │ emerg    │ 2023-03-12 19:00:10.895 │       1 │
+│ benefritz   │ syslog   │ for.us     │ There's a breach in the warp core, captain
+          │ ID74  │   8702 │ debug    │ 2023-03-12 19:00:11.895 │       2 │
+│ ahmadajmi   │ ftp      │ we.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID861 │   5363 │ debug    │ 2023-03-12 19:00:12.895 │       2 │
+│ devankoshal │ local6   │ up.us      │ Take a breath, let it go, walk away
+          │ ID722 │   1471 │ info     │ 2023-03-12 19:00:13.896 │       2 │
+│ ahmadajmi   │ user     │ up.com     │ We're gonna need a bigger boat
+          │ ID411 │    557 │ info     │ 2023-03-12 19:00:14.898 │       2 │
+│ shaneIxD    │ user     │ make.us    │ Maybe we just shouldn't use computers
+          │ ID300 │   1966 │ warning  │ 2023-03-12 19:00:15.896 │       1 │
+│ shaneIxD    │ mail     │ for.com    │ #hugops to everyone who has to deal with this
+          │ ID402 │   5629 │ alert    │ 2023-03-12 19:00:16.895 │       2 │
+│ benefritz   │ audit    │ some.net   │ We're gonna need a bigger boat
+          │ ID640 │   4229 │ debug    │ 2023-03-12 19:00:17.896 │       1 │
+│ meln1ks     │ kern     │ some.de    │ There's a breach in the warp core, captain
+          │ ID672 │    413 │ debug    │ 2023-03-12 19:00:18.896 │       1 │
+│ devankoshal │ user     │ random.com │ Maybe we just shouldn't use computers
+          │ ID913 │   7840 │ warning  │ 2023-03-12 19:00:19.896 │       1 │
+│ benefritz   │ ntp      │ we.org     │ We're gonna need a bigger boat
+          │ ID612 │   9098 │ debug    │ 2023-03-12 19:00:20.896 │       1 │
+│ Karimmove   │ audit    │ names.com  │ #hugops to everyone who has to deal with this
+          │ ID572 │   6751 │ crit     │ 2023-03-12 19:00:21.896 │       1 │
+│ shaneIxD    │ local4   │ names.com  │ There's a breach in the warp core, captain
+          │ ID253 │    608 │ info     │ 2023-03-12 19:00:22.896 │       2 │
+│ Karimmove   │ kern     │ names.org  │ We're gonna need a bigger boat
+          │ ID135 │   8772 │ crit     │ 2023-03-12 19:00:23.928 │       2 │
+│ Karimmove   │ news     │ names.us   │ #hugops to everyone who has to deal with this
+          │ ID60  │   2616 │ debug    │ 2023-03-12 19:00:24.895 │       2 │
+│ devankoshal │ uucp     │ random.net │ You're not gonna believe what just happened
+          │ ID745 │   9507 │ crit     │ 2023-03-12 19:00:25.896 │       1 │
+│ shaneIxD    │ uucp     │ random.us  │ We're gonna need a bigger boat
+          │ ID915 │   1527 │ emerg    │ 2023-03-12 19:00:26.906 │       1 │
+│ jesseddy    │ syslog   │ names.net  │ We're gonna need a bigger boat
+          │ ID91  │   8346 │ emerg    │ 2023-03-12 19:00:27.896 │       2 │
+│ ahmadajmi   │ kern     │ up.us      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID966 │   1525 │ crit     │ 2023-03-12 19:00:28.896 │       2 │
+│ shaneIxD    │ local2   │ for.com    │ We're gonna need a bigger boat
+          │ ID976 │    580 │ alert    │ 2023-03-12 19:00:29.908 │       1 │
+│ benefritz   │ uucp     │ make.net   │ Take a breath, let it go, walk away
+          │ ID811 │   6701 │ emerg    │ 2023-03-12 19:00:30.895 │       1 │
+│ benefritz   │ kern     │ some.de    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID427 │   1004 │ warning  │ 2023-03-12 19:00:31.937 │       1 │
+│ Karimmove   │ ntp      │ make.com   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID785 │   4635 │ alert    │ 2023-03-12 19:00:32.896 │       2 │
+│ ahmadajmi   │ local5   │ for.us     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID237 │   1605 │ info     │ 2023-03-12 19:00:33.896 │       1 │
+│ devankoshal │ local0   │ random.de  │ Take a breath, let it go, walk away
+          │ ID127 │   3140 │ alert    │ 2023-03-12 19:00:34.898 │       1 │
+│ Karimmove   │ mail     │ for.net    │ We're gonna need a bigger boat
+          │ ID829 │   7314 │ err      │ 2023-03-12 19:00:35.895 │       2 │
+│ shaneIxD    │ lpr      │ some.net   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID107 │   8801 │ crit     │ 2023-03-12 19:00:36.896 │       2 │
+│ benefritz   │ mail     │ names.org  │ We're gonna need a bigger boat
+          │ ID76  │   1649 │ notice   │ 2023-03-12 19:00:37.900 │       2 │
+│ devankoshal │ clockd   │ up.us      │ You're not gonna believe what just happened
+          │ ID444 │   9497 │ info     │ 2023-03-12 19:00:38.896 │       2 │
+│ Karimmove   │ ftp      │ some.net   │ You're not gonna believe what just happened
+          │ ID426 │   4748 │ notice   │ 2023-03-12 19:00:39.896 │       1 │
+│ devankoshal │ ntp      │ random.us  │ Take a breath, let it go, walk away
+          │ ID216 │    203 │ info     │ 2023-03-12 19:00:40.898 │       1 │
+│ devankoshal │ cron     │ for.com    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID381 │   5902 │ crit     │ 2023-03-12 19:00:41.931 │       2 │
+│ meln1ks     │ uucp     │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID191 │   9009 │ info     │ 2023-03-12 19:00:42.896 │       2 │
+│ jesseddy    │ local6   │ names.us   │ Pretty pretty pretty good
+          │ ID499 │   5737 │ crit     │ 2023-03-12 19:00:43.897 │       2 │
+│ Karimmove   │ lpr      │ names.de   │ Maybe we just shouldn't use computers
+          │ ID159 │   6270 │ debug    │ 2023-03-12 19:00:44.904 │       1 │
+│ jesseddy    │ lpr      │ random.com │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID282 │   9472 │ emerg    │ 2023-03-12 19:00:45.940 │       2 │
+│ jesseddy    │ lpr      │ random.org │ Pretty pretty pretty good
+          │ ID85  │   7794 │ crit     │ 2023-03-12 19:00:46.896 │       1 │
+│ meln1ks     │ news     │ names.org  │ We're gonna need a bigger boat
+          │ ID162 │   8286 │ warning  │ 2023-03-12 19:00:47.895 │       1 │
+│ meln1ks     │ local4   │ make.de    │ Take a breath, let it go, walk away
+          │ ID722 │   9706 │ crit     │ 2023-03-12 19:00:48.910 │       2 │
+│ meln1ks     │ audit    │ random.us  │ Maybe we just shouldn't use computers
+          │ ID388 │    992 │ info     │ 2023-03-12 19:00:49.897 │       1 │
+│ jesseddy    │ kern     │ names.de   │ #hugops to everyone who has to deal with this
+          │ ID493 │   6414 │ alert    │ 2023-03-12 19:00:50.896 │       1 │
+│ meln1ks     │ cron     │ names.de   │ You're not gonna believe what just happened
+          │ ID575 │   8080 │ emerg    │ 2023-03-12 19:00:51.896 │       2 │
+│ ahmadajmi   │ local0   │ random.org │ We're gonna need a bigger boat
+          │ ID867 │    434 │ warning  │ 2023-03-12 19:00:52.895 │       2 │
+│ shaneIxD    │ lpr      │ make.us    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID619 │   1738 │ warning  │ 2023-03-12 19:00:53.896 │       1 │
+│ shaneIxD    │ kern     │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID140 │   5068 │ debug    │ 2023-03-12 19:00:54.896 │       2 │
+│ benefritz   │ audit    │ we.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID577 │   1723 │ warning  │ 2023-03-12 19:00:55.902 │       1 │
+│ jesseddy    │ local3   │ up.com     │ You're not gonna believe what just happened
+          │ ID220 │   2332 │ debug    │ 2023-03-12 19:00:56.896 │       1 │
+│ jesseddy    │ local1   │ make.net   │ Pretty pretty pretty good
+          │ ID628 │   4985 │ warning  │ 2023-03-12 19:00:57.896 │       1 │
+│ Karimmove   │ local1   │ some.net   │ Pretty pretty pretty good
+          │ ID311 │   8973 │ notice   │ 2023-03-12 19:00:58.904 │       1 │
+│ ahmadajmi   │ local3   │ names.de   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID295 │   9896 │ crit     │ 2023-03-12 19:00:59.895 │       2 │
+│ devankoshal │ local6   │ make.org   │ We're gonna need a bigger boat
+          │ ID920 │   6960 │ warning  │ 2023-03-12 19:01:00.896 │       2 │
+│ meln1ks     │ user     │ random.org │ #hugops to everyone who has to deal with this
+          │ ID924 │   7255 │ emerg    │ 2023-03-12 19:01:01.909 │       2 │
+│ jesseddy    │ daemon   │ names.us   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID399 │   7545 │ alert    │ 2023-03-12 19:01:02.896 │       1 │
+│ meln1ks     │ cron     │ make.com   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID409 │   5613 │ alert    │ 2023-03-12 19:01:03.896 │       2 │
+│ jesseddy    │ daemon   │ random.de  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID111 │   7398 │ debug    │ 2023-03-12 19:01:04.898 │       1 │
+│ shaneIxD    │ syslog   │ some.de    │ We're gonna need a bigger boat
+          │ ID423 │   9552 │ debug    │ 2023-03-12 19:01:05.896 │       1 │
+│ shaneIxD    │ uucp     │ some.com   │ There's a breach in the warp core, captain
+          │ ID617 │    360 │ info     │ 2023-03-12 19:01:06.896 │       1 │
+│ jesseddy    │ clockd   │ we.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID687 │   7606 │ emerg    │ 2023-03-12 19:01:07.896 │       1 │
+│ shaneIxD    │ alert    │ some.com   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID108 │   6655 │ notice   │ 2023-03-12 19:01:08.895 │       2 │
+│ meln1ks     │ local5   │ some.de    │ Take a breath, let it go, walk away
+          │ ID390 │   3682 │ debug    │ 2023-03-12 19:01:09.895 │       1 │
+│ devankoshal │ local5   │ names.us   │ Pretty pretty pretty good
+          │ ID557 │   4077 │ crit     │ 2023-03-12 19:01:10.896 │       1 │
+│ benefritz   │ local4   │ make.de    │ Maybe we just shouldn't use computers
+          │ ID851 │   2753 │ crit     │ 2023-03-12 19:01:11.896 │       1 │
+│ ahmadajmi   │ local7   │ for.net    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID886 │   8754 │ notice   │ 2023-03-12 19:01:12.896 │       2 │
+│ benefritz   │ syslog   │ for.us     │ We're gonna need a bigger boat
+          │ ID164 │   3292 │ crit     │ 2023-03-12 19:01:13.896 │       1 │
+│ benefritz   │ local3   │ some.de    │ Take a breath, let it go, walk away
+          │ ID322 │   6493 │ warning  │ 2023-03-12 19:01:14.896 │       1 │
+│ shaneIxD    │ uucp     │ make.net   │ Pretty pretty pretty good
+          │ ID447 │    164 │ info     │ 2023-03-12 19:01:15.918 │       1 │
+│ Karimmove   │ local0   │ random.org │ You're not gonna believe what just happened
+          │ ID944 │   1222 │ notice   │ 2023-03-12 19:01:16.899 │       2 │
+│ shaneIxD    │ local1   │ random.us  │ There's a breach in the warp core, captain
+          │ ID694 │   7193 │ err      │ 2023-03-12 19:01:17.896 │       2 │
+│ meln1ks     │ daemon   │ names.net  │ We're gonna need a bigger boat
+          │ ID946 │    225 │ warning  │ 2023-03-12 19:01:18.903 │       2 │
+│ Karimmove   │ audit    │ for.net    │ Take a breath, let it go, walk away
+          │ ID178 │   7730 │ warning  │ 2023-03-12 19:01:19.896 │       1 │
+│ Karimmove   │ audit    │ make.org   │ You're not gonna believe what just happened
+          │ ID286 │   7758 │ emerg    │ 2023-03-12 19:01:20.895 │       2 │
+│ benefritz   │ uucp     │ we.de      │ Pretty pretty pretty good
+          │ ID293 │   2618 │ emerg    │ 2023-03-12 19:01:21.896 │       1 │
+│ benefritz   │ authpriv │ for.net    │ We're gonna need a bigger boat
+          │ ID286 │   8494 │ err      │ 2023-03-12 19:01:22.896 │       2 │
+│ benefritz   │ local3   │ names.de   │ You're not gonna believe what just happened
+          │ ID328 │   5100 │ notice   │ 2023-03-12 19:01:23.896 │       1 │
+│ ahmadajmi   │ cron     │ for.net    │ We're gonna need a bigger boat
+          │ ID850 │   8541 │ crit     │ 2023-03-12 19:01:24.904 │       1 │
+│ meln1ks     │ authpriv │ up.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID508 │   9558 │ debug    │ 2023-03-12 19:01:25.908 │       1 │
+│ ahmadajmi   │ cron     │ make.com   │ There's a breach in the warp core, captain
+          │ ID72  │   6862 │ debug    │ 2023-03-12 19:01:26.898 │       2 │
+│ devankoshal │ local3   │ make.net   │ You're not gonna believe what just happened
+          │ ID184 │   7460 │ crit     │ 2023-03-12 19:01:27.896 │       1 │
+│ benefritz   │ local6   │ for.us     │ #hugops to everyone who has to deal with this
+          │ ID748 │   9200 │ crit     │ 2023-03-12 19:01:28.897 │       1 │
+│ meln1ks     │ ntp      │ for.de     │ We're gonna need a bigger boat
+          │ ID20  │   1574 │ crit     │ 2023-03-12 19:01:29.896 │       1 │
+│ shaneIxD    │ local1   │ random.org │ You're not gonna believe what just happened
+          │ ID625 │    922 │ err      │ 2023-03-12 19:01:30.896 │       1 │
+│ ahmadajmi   │ local4   │ names.com  │ There's a breach in the warp core, captain
+          │ ID157 │   1513 │ crit     │ 2023-03-12 19:01:31.896 │       1 │
+│ meln1ks     │ local5   │ names.net  │ You're not gonna believe what just happened
+          │ ID707 │   3746 │ crit     │ 2023-03-12 19:01:32.895 │       1 │
+│ meln1ks     │ ftp      │ some.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID833 │   9419 │ alert    │ 2023-03-12 19:01:33.896 │       1 │
+│ jesseddy    │ local5   │ for.us     │ We're gonna need a bigger boat
+          │ ID913 │   7727 │ emerg    │ 2023-03-12 19:01:34.902 │       1 │
+│ jesseddy    │ mail     │ make.com   │ Maybe we just shouldn't use computers
+          │ ID2   │   4500 │ debug    │ 2023-03-12 19:01:35.896 │       2 │
+│ shaneIxD    │ local1   │ names.com  │ Take a breath, let it go, walk away
+          │ ID604 │   2405 │ emerg    │ 2023-03-12 19:01:36.896 │       1 │
+│ ahmadajmi   │ audit    │ up.de      │ Pretty pretty pretty good
+          │ ID981 │   7710 │ debug    │ 2023-03-12 19:01:37.896 │       1 │
+│ ahmadajmi   │ news     │ up.net     │ Take a breath, let it go, walk away
+          │ ID245 │   8513 │ debug    │ 2023-03-12 19:01:38.896 │       1 │
+│ Karimmove   │ clockd   │ names.de   │ Take a breath, let it go, walk away
+          │ ID842 │   1014 │ debug    │ 2023-03-12 19:01:39.895 │       2 │
+│ meln1ks     │ local1   │ up.net     │ There's a breach in the warp core, captain
+          │ ID570 │   7494 │ crit     │ 2023-03-12 19:01:40.896 │       2 │
+│ Karimmove   │ news     │ make.com   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID487 │   8142 │ crit     │ 2023-03-12 19:01:41.896 │       2 │
+│ shaneIxD    │ news     │ names.net  │ Pretty pretty pretty good
+          │ ID572 │    974 │ info     │ 2023-03-12 19:01:42.896 │       2 │
+│ Karimmove   │ cron     │ up.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID635 │    746 │ crit     │ 2023-03-12 19:01:43.896 │       2 │
+│ ahmadajmi   │ ntp      │ up.us      │ We're gonna need a bigger boat
+          │ ID430 │   7365 │ emerg    │ 2023-03-12 19:01:44.896 │       2 │
+│ meln1ks     │ audit    │ some.net   │ You're not gonna believe what just happened
+          │ ID922 │   2856 │ warning  │ 2023-03-12 19:01:45.896 │       2 │
+│ meln1ks     │ user     │ for.net    │ Take a breath, let it go, walk away
+          │ ID81  │   1538 │ err      │ 2023-03-12 19:01:46.896 │       1 │
+│ shaneIxD    │ ntp      │ up.us      │ You're not gonna believe what just happened
+          │ ID229 │   6939 │ alert    │ 2023-03-12 19:01:47.896 │       1 │
+│ meln1ks     │ auth     │ for.net    │ You're not gonna believe what just happened
+          │ ID902 │   5960 │ emerg    │ 2023-03-12 19:01:48.900 │       1 │
+│ Karimmove   │ local7   │ up.de      │ Pretty pretty pretty good
+          │ ID860 │   4044 │ crit     │ 2023-03-12 19:01:49.896 │       1 │
+│ devankoshal │ ftp      │ names.de   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID863 │   4595 │ alert    │ 2023-03-12 19:01:50.896 │       1 │
+│ devankoshal │ audit    │ for.us     │ #hugops to everyone who has to deal with this
+          │ ID251 │   7095 │ alert    │ 2023-03-12 19:01:51.896 │       1 │
+│ Karimmove   │ audit    │ some.com   │ Pretty pretty pretty good
+          │ ID762 │   5276 │ err      │ 2023-03-12 19:01:52.896 │       1 │
+│ meln1ks     │ alert    │ random.net │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID674 │   6809 │ debug    │ 2023-03-12 19:01:53.896 │       2 │
+│ devankoshal │ local5   │ names.net  │ #hugops to everyone who has to deal with this
+          │ ID216 │    473 │ err      │ 2023-03-12 19:01:54.896 │       1 │
+│ devankoshal │ audit    │ up.net     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID439 │   6958 │ notice   │ 2023-03-12 19:01:55.896 │       2 │
+│ meln1ks     │ uucp     │ up.org     │ There's a breach in the warp core, captain
+          │ ID285 │   1539 │ err      │ 2023-03-12 19:01:56.896 │       2 │
+│ devankoshal │ local2   │ random.com │ You're not gonna believe what just happened
+          │ ID352 │   6089 │ crit     │ 2023-03-12 19:01:57.896 │       1 │
+│ devankoshal │ ntp      │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID247 │   8164 │ err      │ 2023-03-12 19:01:58.896 │       1 │
+│ shaneIxD    │ cron     │ for.de     │ We're gonna need a bigger boat
+          │ ID27  │   7695 │ notice   │ 2023-03-12 19:01:59.896 │       1 │
+│ shaneIxD    │ clockd   │ make.us    │ You're not gonna believe what just happened
+          │ ID285 │    532 │ notice   │ 2023-03-12 19:02:00.899 │       1 │
+│ jesseddy    │ alert    │ we.org     │ There's a breach in the warp core, captain
+          │ ID310 │   6060 │ info     │ 2023-03-12 19:02:01.897 │       2 │
+│ jesseddy    │ local5   │ make.org   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID158 │   2561 │ emerg    │ 2023-03-12 19:02:02.896 │       2 │
+│ devankoshal │ local5   │ make.org   │ We're gonna need a bigger boat
+          │ ID162 │   8081 │ err      │ 2023-03-12 19:02:03.896 │       2 │
+│ ahmadajmi   │ local1   │ for.org    │ Take a breath, let it go, walk away
+          │ ID636 │   4455 │ notice   │ 2023-03-12 19:02:04.896 │       1 │
+│ shaneIxD    │ ntp      │ for.de     │ There's a breach in the warp core, captain
+          │ ID338 │   3431 │ err      │ 2023-03-12 19:02:05.904 │       1 │
+│ shaneIxD    │ kern     │ for.us     │ Maybe we just shouldn't use computers
+          │ ID799 │   6422 │ emerg    │ 2023-03-12 19:02:06.895 │       2 │
+│ jesseddy    │ auth     │ random.us  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID815 │   6684 │ notice   │ 2023-03-12 19:02:07.896 │       1 │
+│ shaneIxD    │ local5   │ some.org   │ There's a breach in the warp core, captain
+          │ ID358 │   2961 │ crit     │ 2023-03-12 19:02:08.911 │       1 │
+│ Karimmove   │ auth     │ for.us     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID286 │   2244 │ crit     │ 2023-03-12 19:02:09.897 │       1 │
+│ jesseddy    │ syslog   │ up.net     │ Pretty pretty pretty good
+          │ ID565 │   8613 │ warning  │ 2023-03-12 19:02:10.902 │       1 │
+│ shaneIxD    │ cron     │ names.net  │ There's a breach in the warp core, captain
+          │ ID287 │   7106 │ debug    │ 2023-03-12 19:02:11.896 │       2 │
+│ ahmadajmi   │ local4   │ random.net │ We're gonna need a bigger boat
+          │ ID152 │   3422 │ err      │ 2023-03-12 19:02:12.896 │       2 │
+│ Karimmove   │ uucp     │ random.net │ Maybe we just shouldn't use computers
+          │ ID880 │   3865 │ debug    │ 2023-03-12 19:02:13.903 │       2 │
+│ shaneIxD    │ cron     │ names.net  │ Pretty pretty pretty good
+          │ ID284 │   3791 │ emerg    │ 2023-03-12 19:02:14.896 │       1 │
+│ meln1ks     │ lpr      │ some.us    │ You're not gonna believe what just happened
+          │ ID97  │   8896 │ err      │ 2023-03-12 19:02:15.901 │       2 │
+│ shaneIxD    │ clockd   │ for.de     │ You're not gonna believe what just happened
+          │ ID442 │   3844 │ notice   │ 2023-03-12 19:02:16.978 │       1 │
+│ Karimmove   │ cron     │ some.net   │ Pretty pretty pretty good
+          │ ID776 │   8817 │ info     │ 2023-03-12 19:02:17.895 │       2 │
+│ benefritz   │ auth     │ for.de     │ You're not gonna believe what just happened
+          │ ID843 │   7274 │ emerg    │ 2023-03-12 19:02:18.903 │       2 │
+│ meln1ks     │ lpr      │ we.de      │ Pretty pretty pretty good
+          │ ID986 │    601 │ err      │ 2023-03-12 19:02:19.897 │       2 │
+│ devankoshal │ audit    │ make.net   │ There's a breach in the warp core, captain
+          │ ID987 │   7744 │ emerg    │ 2023-03-12 19:02:20.908 │       2 │
+│ jesseddy    │ user     │ make.de    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID144 │   3689 │ crit     │ 2023-03-12 19:02:21.896 │       1 │
+│ devankoshal │ clockd   │ up.de      │ Maybe we just shouldn't use computers
+          │ ID451 │   4659 │ warning  │ 2023-03-12 19:02:22.896 │       2 │
+│ benefritz   │ kern     │ make.us    │ Maybe we just shouldn't use computers
+          │ ID62  │    239 │ notice   │ 2023-03-12 19:02:23.896 │       2 │
+│ Karimmove   │ auth     │ up.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID34  │   2892 │ alert    │ 2023-03-12 19:02:24.896 │       2 │
+│ benefritz   │ local1   │ up.org     │ Pretty pretty pretty good
+          │ ID343 │   7246 │ crit     │ 2023-03-12 19:02:25.895 │       2 │
+│ devankoshal │ auth     │ up.us      │ Pretty pretty pretty good
+          │ ID727 │   6757 │ emerg    │ 2023-03-12 19:02:26.937 │       2 │
+│ shaneIxD    │ local7   │ random.de  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID927 │   6535 │ notice   │ 2023-03-12 19:02:27.896 │       1 │
+│ ahmadajmi   │ news     │ make.us    │ #hugops to everyone who has to deal with this
+          │ ID831 │   4112 │ emerg    │ 2023-03-12 19:02:28.896 │       2 │
+│ Karimmove   │ lpr      │ random.org │ Maybe we just shouldn't use computers
+          │ ID686 │   6647 │ warning  │ 2023-03-12 19:02:29.907 │       2 │
+│ devankoshal │ ftp      │ random.com │ Take a breath, let it go, walk away
+          │ ID313 │   6981 │ err      │ 2023-03-12 19:02:30.896 │       2 │
+│ meln1ks     │ clockd   │ for.net    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID454 │   4676 │ notice   │ 2023-03-12 19:02:31.897 │       2 │
+│ meln1ks     │ local7   │ up.de      │ Pretty pretty pretty good
+          │ ID881 │   9235 │ warning  │ 2023-03-12 19:02:32.896 │       1 │
+│ ahmadajmi   │ local2   │ for.org    │ You're not gonna believe what just happened
+          │ ID330 │   3004 │ crit     │ 2023-03-12 19:02:33.896 │       2 │
+│ ahmadajmi   │ user     │ we.org     │ You're not gonna believe what just happened
+          │ ID978 │   2098 │ debug    │ 2023-03-12 19:02:34.895 │       1 │
+│ benefritz   │ local7   │ random.de  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID972 │   5553 │ info     │ 2023-03-12 19:02:35.897 │       2 │
+│ shaneIxD    │ cron     │ some.net   │ Maybe we just shouldn't use computers
+          │ ID81  │   7018 │ emerg    │ 2023-03-12 19:02:36.898 │       1 │
+│ jesseddy    │ ftp      │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID688 │   6253 │ alert    │ 2023-03-12 19:02:37.904 │       1 │
+│ jesseddy    │ authpriv │ random.net │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID89  │   4581 │ warning  │ 2023-03-12 19:02:38.942 │       2 │
+│ devankoshal │ local5   │ we.de      │ Maybe we just shouldn't use computers
+          │ ID901 │   2474 │ emerg    │ 2023-03-12 19:02:39.896 │       1 │
+│ shaneIxD    │ lpr      │ some.net   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID618 │   9453 │ info     │ 2023-03-12 19:02:40.896 │       1 │
+│ Karimmove   │ clockd   │ for.de     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID382 │   8706 │ info     │ 2023-03-12 19:02:41.896 │       1 │
+│ benefritz   │ mail     │ up.de      │ Take a breath, let it go, walk away
+          │ ID682 │    403 │ err      │ 2023-03-12 19:02:42.895 │       1 │
+│ benefritz   │ lpr      │ random.us  │ Maybe we just shouldn't use computers
+          │ ID92  │   5774 │ crit     │ 2023-03-12 19:02:43.896 │       2 │
+│ meln1ks     │ news     │ some.net   │ You're not gonna believe what just happened
+          │ ID60  │   4323 │ alert    │ 2023-03-12 19:02:44.896 │       2 │
+│ Karimmove   │ daemon   │ names.net  │ Take a breath, let it go, walk away
+          │ ID61  │   5205 │ notice   │ 2023-03-12 19:02:45.896 │       2 │
+│ Karimmove   │ lpr      │ names.us   │ Maybe we just shouldn't use computers
+          │ ID76  │   6602 │ info     │ 2023-03-12 19:02:46.907 │       2 │
+│ meln1ks     │ audit    │ random.us  │ There's a breach in the warp core, captain
+          │ ID230 │   9091 │ warning  │ 2023-03-12 19:02:47.916 │       1 │
+│ benefritz   │ local6   │ some.org   │ You're not gonna believe what just happened
+          │ ID379 │   6861 │ info     │ 2023-03-12 19:02:48.895 │       2 │
+│ ahmadajmi   │ local6   │ make.com   │ Pretty pretty pretty good
+          │ ID159 │   1885 │ info     │ 2023-03-12 19:02:49.896 │       1 │
+│ jesseddy    │ authpriv │ for.de     │ #hugops to everyone who has to deal with this
+          │ ID269 │   5889 │ warning  │ 2023-03-12 19:02:50.896 │       2 │
+│ Karimmove   │ local3   │ up.org     │ #hugops to everyone who has to deal with this
+          │ ID78  │   4832 │ warning  │ 2023-03-12 19:02:51.897 │       1 │
+│ Karimmove   │ news     │ make.us    │ Maybe we just shouldn't use computers
+          │ ID891 │   7090 │ crit     │ 2023-03-12 19:02:52.898 │       2 │
+│ shaneIxD    │ local1   │ names.net  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID376 │   2823 │ emerg    │ 2023-03-12 19:02:53.896 │       2 │
+│ ahmadajmi   │ local4   │ names.net  │ Pretty pretty pretty good
+          │ ID709 │   3718 │ notice   │ 2023-03-12 19:02:54.896 │       2 │
+│ meln1ks     │ ftp      │ some.org   │ You're not gonna believe what just happened
+          │ ID616 │   7328 │ emerg    │ 2023-03-12 19:02:55.962 │       2 │
+│ ahmadajmi   │ local7   │ up.org     │ You're not gonna believe what just happened
+          │ ID845 │   7051 │ crit     │ 2023-03-12 19:02:56.895 │       1 │
+│ shaneIxD    │ ntp      │ up.de      │ We're gonna need a bigger boat
+          │ ID191 │   4497 │ info     │ 2023-03-12 19:02:57.896 │       1 │
+│ benefritz   │ auth     │ make.org   │ There's a breach in the warp core, captain
+          │ ID182 │   4934 │ alert    │ 2023-03-12 19:02:58.896 │       2 │
+│ Karimmove   │ local3   │ we.com     │ Pretty pretty pretty good
+          │ ID949 │   1352 │ alert    │ 2023-03-12 19:02:59.896 │       1 │
+│ Karimmove   │ kern     │ up.net     │ You're not gonna believe what just happened
+          │ ID700 │   3184 │ debug    │ 2023-03-12 19:03:00.907 │       1 │
+│ devankoshal │ local7   │ for.com    │ We're gonna need a bigger boat
+          │ ID235 │   5507 │ err      │ 2023-03-12 19:03:01.896 │       1 │
+│ jesseddy    │ local4   │ some.net   │ Pretty pretty pretty good
+          │ ID214 │   2450 │ debug    │ 2023-03-12 19:03:02.896 │       2 │
+│ ahmadajmi   │ local3   │ we.us      │ Pretty pretty pretty good
+          │ ID459 │   2135 │ debug    │ 2023-03-12 19:03:03.897 │       2 │
+│ shaneIxD    │ kern     │ we.net     │ Maybe we just shouldn't use computers
+          │ ID898 │   3490 │ crit     │ 2023-03-12 19:03:04.896 │       1 │
+│ ahmadajmi   │ local3   │ for.de     │ We're gonna need a bigger boat
+          │ ID891 │   6794 │ alert    │ 2023-03-12 19:03:05.896 │       1 │
+│ devankoshal │ local0   │ we.com     │ You're not gonna believe what just happened
+          │ ID799 │   7164 │ err      │ 2023-03-12 19:03:06.901 │       1 │
+│ meln1ks     │ syslog   │ make.org   │ You're not gonna believe what just happened
+          │ ID150 │   2224 │ info     │ 2023-03-12 19:03:07.896 │       2 │
+│ meln1ks     │ authpriv │ we.com     │ We're gonna need a bigger boat
+          │ ID755 │   6072 │ debug    │ 2023-03-12 19:03:08.896 │       1 │
+│ Karimmove   │ syslog   │ names.org  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID51  │   8477 │ err      │ 2023-03-12 19:03:09.943 │       1 │
+│ meln1ks     │ clockd   │ up.net     │ Maybe we just shouldn't use computers
+          │ ID399 │   4207 │ crit     │ 2023-03-12 19:03:10.896 │       2 │
+│ shaneIxD    │ authpriv │ make.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID97  │   6753 │ crit     │ 2023-03-12 19:03:11.896 │       2 │
+│ shaneIxD    │ mail     │ make.us    │ Take a breath, let it go, walk away
+          │ ID865 │   6359 │ notice   │ 2023-03-12 19:03:12.906 │       1 │
+│ meln1ks     │ news     │ names.com  │ #hugops to everyone who has to deal with this
+          │ ID694 │   2055 │ notice   │ 2023-03-12 19:03:13.897 │       1 │
+│ Karimmove   │ local5   │ names.de   │ Take a breath, let it go, walk away
+          │ ID49  │   8120 │ debug    │ 2023-03-12 19:03:14.896 │       1 │
+│ ahmadajmi   │ local1   │ random.de  │ #hugops to everyone who has to deal with this
+          │ ID335 │   8839 │ notice   │ 2023-03-12 19:03:15.950 │       2 │
+│ benefritz   │ clockd   │ some.net   │ We're gonna need a bigger boat
+          │ ID675 │   7722 │ info     │ 2023-03-12 19:03:16.896 │       1 │
+│ shaneIxD    │ authpriv │ make.org   │ There's a breach in the warp core, captain
+          │ ID634 │   2608 │ alert    │ 2023-03-12 19:03:17.943 │       2 │
+│ meln1ks     │ clockd   │ we.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID13  │   8358 │ emerg    │ 2023-03-12 19:03:18.896 │       2 │
+│ meln1ks     │ news     │ make.de    │ Take a breath, let it go, walk away
+          │ ID186 │   2397 │ alert    │ 2023-03-12 19:03:19.896 │       2 │
+│ benefritz   │ uucp     │ names.de   │ Take a breath, let it go, walk away
+          │ ID466 │   1885 │ crit     │ 2023-03-12 19:03:20.898 │       1 │
+│ devankoshal │ cron     │ up.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID304 │   7580 │ notice   │ 2023-03-12 19:03:21.896 │       2 │
+│ Karimmove   │ cron     │ names.net  │ #hugops to everyone who has to deal with this
+          │ ID550 │   4320 │ crit     │ 2023-03-12 19:03:22.896 │       1 │
+│ devankoshal │ ntp      │ for.org    │ Pretty pretty pretty good
+          │ ID427 │   1418 │ warning  │ 2023-03-12 19:03:23.896 │       1 │
+│ Karimmove   │ kern     │ for.net    │ You're not gonna believe what just happened
+          │ ID497 │   4760 │ crit     │ 2023-03-12 19:03:24.896 │       1 │
+│ Karimmove   │ daemon   │ we.org     │ Take a breath, let it go, walk away
+          │ ID418 │   8653 │ crit     │ 2023-03-12 19:03:25.896 │       1 │
+│ devankoshal │ news     │ names.de   │ You're not gonna believe what just happened
+          │ ID447 │   8008 │ emerg    │ 2023-03-12 19:03:26.896 │       2 │
+│ devankoshal │ ftp      │ for.net    │ Pretty pretty pretty good
+          │ ID883 │   9580 │ debug    │ 2023-03-12 19:03:27.920 │       2 │
+│ ahmadajmi   │ authpriv │ we.org     │ Pretty pretty pretty good
+          │ ID649 │   1492 │ emerg    │ 2023-03-12 19:03:28.899 │       1 │
+│ shaneIxD    │ kern     │ some.us    │ Take a breath, let it go, walk away
+          │ ID380 │   7271 │ crit     │ 2023-03-12 19:03:29.896 │       2 │
+│ Karimmove   │ syslog   │ for.com    │ Pretty pretty pretty good
+          │ ID699 │   6856 │ info     │ 2023-03-12 19:03:30.897 │       2 │
+│ meln1ks     │ alert    │ names.org  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID476 │   1626 │ alert    │ 2023-03-12 19:03:31.896 │       2 │
+│ shaneIxD    │ uucp     │ for.com    │ Maybe we just shouldn't use computers
+          │ ID843 │   6858 │ err      │ 2023-03-12 19:03:32.896 │       1 │
+│ devankoshal │ uucp     │ we.org     │ You're not gonna believe what just happened
+          │ ID518 │   9582 │ emerg    │ 2023-03-12 19:03:33.902 │       1 │
+│ Karimmove   │ cron     │ some.de    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID52  │   9550 │ notice   │ 2023-03-12 19:03:34.896 │       1 │
+│ benefritz   │ daemon   │ random.net │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID477 │    805 │ info     │ 2023-03-12 19:03:35.940 │       1 │
+│ jesseddy    │ local0   │ for.org    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID168 │   5828 │ warning  │ 2023-03-12 19:03:36.896 │       2 │
+│ meln1ks     │ local3   │ some.com   │ Maybe we just shouldn't use computers
+          │ ID251 │   5553 │ crit     │ 2023-03-12 19:03:37.906 │       2 │
+│ jesseddy    │ local2   │ some.com   │ There's a breach in the warp core, captain
+          │ ID574 │   8724 │ info     │ 2023-03-12 19:03:38.895 │       1 │
+│ shaneIxD    │ user     │ random.de  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID800 │   9683 │ debug    │ 2023-03-12 19:03:39.896 │       1 │
+│ devankoshal │ clockd   │ up.org     │ Maybe we just shouldn't use computers
+          │ ID251 │   6565 │ warning  │ 2023-03-12 19:03:40.899 │       1 │
+│ Karimmove   │ alert    │ some.us    │ #hugops to everyone who has to deal with this
+          │ ID550 │   5860 │ debug    │ 2023-03-12 19:03:41.896 │       1 │
+│ meln1ks     │ daemon   │ up.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID330 │   9360 │ err      │ 2023-03-12 19:03:42.895 │       2 │
+│ shaneIxD    │ news     │ make.com   │ Take a breath, let it go, walk away
+          │ ID112 │    999 │ info     │ 2023-03-12 19:03:43.900 │       2 │
+│ jesseddy    │ local0   │ make.org   │ There's a breach in the warp core, captain
+          │ ID162 │   8640 │ err      │ 2023-03-12 19:03:44.896 │       2 │
+│ meln1ks     │ daemon   │ up.com     │ Pretty pretty pretty good
+          │ ID523 │   3887 │ warning  │ 2023-03-12 19:03:45.915 │       1 │
+│ jesseddy    │ kern     │ for.net    │ Take a breath, let it go, walk away
+          │ ID355 │   2311 │ emerg    │ 2023-03-12 19:03:46.902 │       2 │
+│ benefritz   │ ntp      │ we.de      │ Take a breath, let it go, walk away
+          │ ID219 │   2524 │ err      │ 2023-03-12 19:03:47.895 │       1 │
+│ shaneIxD    │ daemon   │ up.org     │ We're gonna need a bigger boat
+          │ ID918 │   9850 │ debug    │ 2023-03-12 19:03:48.897 │       1 │
+│ Karimmove   │ news     │ names.de   │ Pretty pretty pretty good
+          │ ID800 │   8496 │ notice   │ 2023-03-12 19:03:49.895 │       2 │
+│ ahmadajmi   │ daemon   │ names.us   │ There's a breach in the warp core, captain
+          │ ID323 │   2589 │ notice   │ 2023-03-12 19:03:50.899 │       1 │
+│ jesseddy    │ local1   │ random.us  │ We're gonna need a bigger boat
+          │ ID144 │   8749 │ err      │ 2023-03-12 19:03:51.897 │       2 │
+│ jesseddy    │ local7   │ up.com     │ We're gonna need a bigger boat
+          │ ID75  │   2161 │ warning  │ 2023-03-12 19:03:52.896 │       2 │
+│ meln1ks     │ local1   │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID522 │   6198 │ crit     │ 2023-03-12 19:03:53.902 │       1 │
+│ meln1ks     │ uucp     │ up.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID913 │   5041 │ notice   │ 2023-03-12 19:03:54.895 │       1 │
+│ ahmadajmi   │ local5   │ we.de      │ You're not gonna believe what just happened
+          │ ID2   │   4102 │ warning  │ 2023-03-12 19:03:55.912 │       1 │
+│ meln1ks     │ local7   │ up.org     │ You're not gonna believe what just happened
+          │ ID829 │   5491 │ crit     │ 2023-03-12 19:03:56.898 │       2 │
+│ Karimmove   │ local6   │ for.org    │ Maybe we just shouldn't use computers
+          │ ID196 │   6510 │ emerg    │ 2023-03-12 19:03:57.896 │       1 │
+│ Karimmove   │ local7   │ up.us      │ There's a breach in the warp core, captain
+          │ ID831 │   2818 │ crit     │ 2023-03-12 19:03:58.898 │       2 │
+│ shaneIxD    │ local5   │ random.com │ Take a breath, let it go, walk away
+          │ ID423 │   9586 │ emerg    │ 2023-03-12 19:03:59.896 │       1 │
+│ ahmadajmi   │ uucp     │ random.de  │ There's a breach in the warp core, captain
+          │ ID580 │   6194 │ warning  │ 2023-03-12 19:04:00.897 │       2 │
+│ ahmadajmi   │ local1   │ random.de  │ Take a breath, let it go, walk away
+          │ ID456 │   3954 │ info     │ 2023-03-12 19:04:01.896 │       1 │
+│ devankoshal │ local6   │ for.com    │ Pretty pretty pretty good
+          │ ID644 │   9915 │ warning  │ 2023-03-12 19:04:02.895 │       2 │
+│ benefritz   │ clockd   │ names.us   │ You're not gonna believe what just happened
+          │ ID139 │   9109 │ crit     │ 2023-03-12 19:04:03.899 │       2 │
+│ shaneIxD    │ syslog   │ some.us    │ There's a breach in the warp core, captain
+          │ ID423 │   5090 │ warning  │ 2023-03-12 19:04:04.896 │       2 │
+│ Karimmove   │ local2   │ random.org │ There's a breach in the warp core, captain
+          │ ID96  │   4994 │ notice   │ 2023-03-12 19:04:05.896 │       2 │
+│ shaneIxD    │ ftp      │ some.de    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID23  │   9983 │ emerg    │ 2023-03-12 19:04:06.899 │       1 │
+│ benefritz   │ daemon   │ some.de    │ Maybe we just shouldn't use computers
+          │ ID356 │    740 │ notice   │ 2023-03-12 19:04:07.895 │       2 │
+│ shaneIxD    │ user     │ we.de      │ Pretty pretty pretty good
+          │ ID504 │    891 │ err      │ 2023-03-12 19:04:08.896 │       1 │
+│ devankoshal │ lpr      │ some.org   │ #hugops to everyone who has to deal with this
+          │ ID280 │    767 │ warning  │ 2023-03-12 19:04:09.896 │       1 │
+│ Karimmove   │ ntp      │ make.com   │ Take a breath, let it go, walk away
+          │ ID49  │   4291 │ err      │ 2023-03-12 19:04:10.896 │       2 │
+│ meln1ks     │ cron     │ for.org    │ There's a breach in the warp core, captain
+          │ ID104 │   8834 │ debug    │ 2023-03-12 19:04:11.933 │       2 │
+│ shaneIxD    │ news     │ names.org  │ Pretty pretty pretty good
+          │ ID390 │   9922 │ emerg    │ 2023-03-12 19:04:12.896 │       2 │
+│ ahmadajmi   │ local0   │ random.net │ You're not gonna believe what just happened
+          │ ID388 │   4859 │ notice   │ 2023-03-12 19:04:13.895 │       2 │
+│ ahmadajmi   │ auth     │ up.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID359 │   8838 │ crit     │ 2023-03-12 19:04:14.906 │       1 │
+│ Karimmove   │ ntp      │ names.net  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID783 │   9035 │ notice   │ 2023-03-12 19:04:15.914 │       1 │
+│ meln1ks     │ audit    │ random.com │ Take a breath, let it go, walk away
+          │ ID231 │   5175 │ err      │ 2023-03-12 19:04:16.900 │       1 │
+│ Karimmove   │ syslog   │ for.com    │ #hugops to everyone who has to deal with this
+          │ ID371 │   3055 │ alert    │ 2023-03-12 19:04:17.896 │       2 │
+│ meln1ks     │ auth     │ we.org     │ Take a breath, let it go, walk away
+          │ ID744 │   3186 │ warning  │ 2023-03-12 19:04:18.903 │       2 │
+│ meln1ks     │ local7   │ up.us      │ There's a breach in the warp core, captain
+          │ ID419 │   7108 │ info     │ 2023-03-12 19:04:19.896 │       2 │
+│ shaneIxD    │ local2   │ some.org   │ Take a breath, let it go, walk away
+          │ ID249 │   7215 │ crit     │ 2023-03-12 19:04:20.895 │       2 │
+│ ahmadajmi   │ user     │ names.de   │ You're not gonna believe what just happened
+          │ ID93  │   6206 │ warning  │ 2023-03-12 19:04:21.933 │       1 │
+│ meln1ks     │ daemon   │ up.net     │ There's a breach in the warp core, captain
+          │ ID711 │   6439 │ emerg    │ 2023-03-12 19:04:22.905 │       2 │
+│ jesseddy    │ mail     │ names.com  │ #hugops to everyone who has to deal with this
+          │ ID692 │   8352 │ notice   │ 2023-03-12 19:04:23.898 │       1 │
+│ ahmadajmi   │ daemon   │ up.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID857 │    547 │ emerg    │ 2023-03-12 19:04:24.899 │       2 │
+│ shaneIxD    │ uucp     │ names.us   │ Pretty pretty pretty good
+          │ ID648 │   6119 │ alert    │ 2023-03-12 19:04:25.896 │       1 │
+│ shaneIxD    │ ftp      │ some.de    │ #hugops to everyone who has to deal with this
+          │ ID527 │   6229 │ err      │ 2023-03-12 19:04:26.896 │       1 │
+│ meln1ks     │ local4   │ up.net     │ There's a breach in the warp core, captain
+          │ ID984 │   7283 │ info     │ 2023-03-12 19:04:27.896 │       2 │
+│ meln1ks     │ clockd   │ we.com     │ Maybe we just shouldn't use computers
+          │ ID907 │   1495 │ notice   │ 2023-03-12 19:04:28.896 │       2 │
+│ devankoshal │ auth     │ for.de     │ There's a breach in the warp core, captain
+          │ ID485 │   5712 │ emerg    │ 2023-03-12 19:04:29.913 │       1 │
+│ meln1ks     │ mail     │ we.org     │ You're not gonna believe what just happened
+          │ ID747 │    416 │ crit     │ 2023-03-12 19:04:30.895 │       2 │
+│ meln1ks     │ local2   │ up.us      │ Pretty pretty pretty good
+          │ ID997 │   7227 │ alert    │ 2023-03-12 19:04:31.938 │       1 │
+│ meln1ks     │ local7   │ some.com   │ We're gonna need a bigger boat
+          │ ID18  │   9373 │ warning  │ 2023-03-12 19:04:32.896 │       2 │
+│ devankoshal │ clockd   │ for.de     │ You're not gonna believe what just happened
+          │ ID386 │   2756 │ err      │ 2023-03-12 19:04:33.896 │       2 │
+│ meln1ks     │ authpriv │ up.us      │ #hugops to everyone who has to deal with this
+          │ ID960 │    360 │ err      │ 2023-03-12 19:04:34.895 │       1 │
+│ meln1ks     │ syslog   │ up.com     │ #hugops to everyone who has to deal with this
+          │ ID597 │   5194 │ crit     │ 2023-03-12 19:04:35.899 │       2 │
+│ ahmadajmi   │ local1   │ we.com     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID678 │   7793 │ warning  │ 2023-03-12 19:04:36.907 │       1 │
+│ benefritz   │ lpr      │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID88  │   4554 │ err      │ 2023-03-12 19:04:37.895 │       2 │
+│ ahmadajmi   │ ntp      │ names.us   │ You're not gonna believe what just happened
+          │ ID654 │   6164 │ err      │ 2023-03-12 19:04:38.896 │       1 │
+│ meln1ks     │ daemon   │ random.net │ Pretty pretty pretty good
+          │ ID921 │   5145 │ emerg    │ 2023-03-12 19:04:39.938 │       2 │
+│ devankoshal │ uucp     │ names.org  │ #hugops to everyone who has to deal with this
+          │ ID992 │   8788 │ crit     │ 2023-03-12 19:04:40.897 │       1 │
+│ devankoshal │ local6   │ for.us     │ There's a breach in the warp core, captain
+          │ ID977 │   8208 │ debug    │ 2023-03-12 19:04:41.896 │       1 │
+│ jesseddy    │ local0   │ some.org   │ There's a breach in the warp core, captain
+          │ ID255 │   4566 │ alert    │ 2023-03-12 19:04:42.902 │       1 │
+│ jesseddy    │ mail     │ we.de      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID997 │    735 │ info     │ 2023-03-12 19:04:43.896 │       1 │
+│ benefritz   │ lpr      │ up.de      │ We're gonna need a bigger boat
+          │ ID297 │   8810 │ info     │ 2023-03-12 19:04:44.896 │       1 │
+│ shaneIxD    │ cron     │ up.org     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID896 │   7724 │ info     │ 2023-03-12 19:04:45.896 │       2 │
+│ benefritz   │ local0   │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID53  │   7802 │ info     │ 2023-03-12 19:04:46.895 │       2 │
+│ shaneIxD    │ auth     │ some.com   │ There's a breach in the warp core, captain
+          │ ID504 │   3122 │ warning  │ 2023-03-12 19:04:47.896 │       1 │
+│ shaneIxD    │ local3   │ for.org    │ We're gonna need a bigger boat
+          │ ID748 │   3849 │ notice   │ 2023-03-12 19:04:48.899 │       2 │
+│ benefritz   │ local2   │ we.com     │ There's a breach in the warp core, captain
+          │ ID840 │   1632 │ debug    │ 2023-03-12 19:04:49.897 │       2 │
+│ jesseddy    │ local5   │ names.de   │ We're gonna need a bigger boat
+          │ ID161 │   5158 │ err      │ 2023-03-12 19:04:50.896 │       1 │
+│ meln1ks     │ daemon   │ some.de    │ Take a breath, let it go, walk away
+          │ ID492 │    346 │ info     │ 2023-03-12 19:04:51.896 │       1 │
+│ devankoshal │ local2   │ make.com   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID345 │   3899 │ notice   │ 2023-03-12 19:04:52.896 │       2 │
+│ benefritz   │ ntp      │ some.org   │ You're not gonna believe what just happened
+          │ ID511 │   1834 │ warning  │ 2023-03-12 19:04:53.946 │       1 │
+│ meln1ks     │ syslog   │ names.org  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID836 │   3376 │ notice   │ 2023-03-12 19:04:54.896 │       1 │
+│ meln1ks     │ kern     │ some.de    │ You're not gonna believe what just happened
+          │ ID401 │   9690 │ err      │ 2023-03-12 19:04:55.896 │       1 │
+│ benefritz   │ local7   │ names.org  │ Take a breath, let it go, walk away
+          │ ID290 │    484 │ alert    │ 2023-03-12 19:04:56.896 │       2 │
+│ benefritz   │ authpriv │ some.de    │ Pretty pretty pretty good
+          │ ID22  │   9366 │ info     │ 2023-03-12 19:04:57.895 │       1 │
+│ jesseddy    │ alert    │ we.com     │ Pretty pretty pretty good
+          │ ID715 │   7204 │ crit     │ 2023-03-12 19:04:58.899 │       1 │
+│ jesseddy    │ syslog   │ random.com │ You're not gonna believe what just happened
+          │ ID816 │   4243 │ debug    │ 2023-03-12 19:04:59.897 │       2 │
+│ benefritz   │ cron     │ up.net     │ Pretty pretty pretty good
+          │ ID22  │   3599 │ info     │ 2023-03-12 19:05:00.895 │       2 │
+│ meln1ks     │ news     │ names.us   │ Pretty pretty pretty good
+          │ ID548 │   9785 │ alert    │ 2023-03-12 19:05:01.941 │       2 │
+│ shaneIxD    │ local7   │ up.de      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID269 │   7980 │ warning  │ 2023-03-12 19:05:02.896 │       2 │
+│ benefritz   │ daemon   │ up.net     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID71  │   9318 │ warning  │ 2023-03-12 19:05:03.895 │       1 │
+│ shaneIxD    │ clockd   │ for.com    │ #hugops to everyone who has to deal with this
+          │ ID791 │   9316 │ crit     │ 2023-03-12 19:05:04.903 │       1 │
+│ meln1ks     │ cron     │ make.de    │ There's a breach in the warp core, captain
+          │ ID158 │   7527 │ emerg    │ 2023-03-12 19:05:05.896 │       2 │
+│ ahmadajmi   │ local0   │ for.net    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID643 │   9786 │ crit     │ 2023-03-12 19:05:06.896 │       2 │
+│ benefritz   │ uucp     │ some.us    │ Take a breath, let it go, walk away
+          │ ID385 │    928 │ alert    │ 2023-03-12 19:05:07.896 │       2 │
+│ benefritz   │ kern     │ names.us   │ #hugops to everyone who has to deal with this
+          │ ID851 │    193 │ alert    │ 2023-03-12 19:05:08.896 │       1 │
+│ shaneIxD    │ mail     │ random.us  │ #hugops to everyone who has to deal with this
+          │ ID38  │   7542 │ notice   │ 2023-03-12 19:05:09.896 │       2 │
+│ benefritz   │ user     │ some.de    │ Take a breath, let it go, walk away
+          │ ID143 │   1607 │ warning  │ 2023-03-12 19:05:10.896 │       1 │
+│ shaneIxD    │ kern     │ up.com     │ You're not gonna believe what just happened
+          │ ID978 │   9531 │ err      │ 2023-03-12 19:05:11.896 │       2 │
+│ shaneIxD    │ authpriv │ names.net  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID767 │   4542 │ alert    │ 2023-03-12 19:05:12.895 │       1 │
+│ Karimmove   │ mail     │ names.org  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID676 │   2100 │ notice   │ 2023-03-12 19:05:13.896 │       2 │
+│ ahmadajmi   │ alert    │ for.net    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID736 │   1434 │ notice   │ 2023-03-12 19:05:14.902 │       2 │
+│ devankoshal │ lpr      │ for.org    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID929 │   1646 │ notice   │ 2023-03-12 19:05:15.902 │       1 │
+│ jesseddy    │ local0   │ some.org   │ You're not gonna believe what just happened
+          │ ID534 │   1527 │ alert    │ 2023-03-12 19:05:16.896 │       1 │
+│ Karimmove   │ ftp      │ for.us     │ You're not gonna believe what just happened
+          │ ID661 │   6882 │ warning  │ 2023-03-12 19:05:17.906 │       1 │
+│ jesseddy    │ user     │ make.org   │ Pretty pretty pretty good
+          │ ID623 │   2392 │ notice   │ 2023-03-12 19:05:18.897 │       2 │
+│ devankoshal │ alert    │ up.com     │ There's a breach in the warp core, captain
+          │ ID216 │   1113 │ err      │ 2023-03-12 19:05:19.896 │       2 │
+│ devankoshal │ uucp     │ for.com    │ Pretty pretty pretty good
+          │ ID429 │    747 │ emerg    │ 2023-03-12 19:05:20.897 │       1 │
+│ devankoshal │ local7   │ some.de    │ There's a breach in the warp core, captain
+          │ ID563 │   8250 │ emerg    │ 2023-03-12 19:05:21.896 │       2 │
+│ devankoshal │ audit    │ up.net     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID249 │   1558 │ debug    │ 2023-03-12 19:05:22.896 │       2 │
+│ ahmadajmi   │ clockd   │ for.org    │ #hugops to everyone who has to deal with this
+          │ ID607 │   1688 │ emerg    │ 2023-03-12 19:05:23.897 │       2 │
+│ Karimmove   │ ftp      │ names.us   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID829 │   5952 │ emerg    │ 2023-03-12 19:05:24.905 │       1 │
+│ meln1ks     │ mail     │ random.de  │ Take a breath, let it go, walk away
+          │ ID514 │   8859 │ emerg    │ 2023-03-12 19:05:25.896 │       1 │
+│ devankoshal │ local4   │ some.de    │ #hugops to everyone who has to deal with this
+          │ ID621 │   4091 │ debug    │ 2023-03-12 19:05:26.897 │       1 │
+│ meln1ks     │ local6   │ some.de    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID186 │   7667 │ info     │ 2023-03-12 19:05:27.896 │       1 │
+│ jesseddy    │ uucp     │ names.us   │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID462 │    856 │ info     │ 2023-03-12 19:05:28.896 │       2 │
+│ shaneIxD    │ ftp      │ we.us      │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID647 │   2575 │ notice   │ 2023-03-12 19:05:29.896 │       1 │
+│ devankoshal │ cron     │ names.com  │ Pretty pretty pretty good
+          │ ID261 │   2050 │ emerg    │ 2023-03-12 19:05:30.896 │       1 │
+│ benefritz   │ mail     │ make.org   │ There's a breach in the warp core, captain
+          │ ID934 │   8868 │ debug    │ 2023-03-12 19:05:31.896 │       1 │
+│ benefritz   │ alert    │ make.us    │ Take a breath, let it go, walk away
+          │ ID639 │   6610 │ emerg    │ 2023-03-12 19:05:32.903 │       2 │
+│ devankoshal │ local3   │ we.com     │ Pretty pretty pretty good
+          │ ID312 │    729 │ crit     │ 2023-03-12 19:05:33.896 │       2 │
+│ jesseddy    │ mail     │ we.com     │ You're not gonna believe what just happened
+          │ ID699 │   8007 │ debug    │ 2023-03-12 19:05:34.896 │       1 │
+│ ahmadajmi   │ news     │ we.de      │ There's a breach in the warp core, captain
+          │ ID437 │   7303 │ err      │ 2023-03-12 19:05:35.906 │       1 │
+│ jesseddy    │ local3   │ we.org     │ You're not gonna believe what just happened
+          │ ID993 │    879 │ crit     │ 2023-03-12 19:05:36.896 │       1 │
+│ Karimmove   │ ntp      │ for.net    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID78  │    781 │ err      │ 2023-03-12 19:05:37.897 │       2 │
+│ shaneIxD    │ local0   │ for.org    │ Maybe we just shouldn't use computers
+          │ ID151 │   8631 │ err      │ 2023-03-12 19:05:38.903 │       2 │
+│ ahmadajmi   │ local2   │ make.net   │ We're gonna need a bigger boat
+          │ ID487 │   7291 │ info     │ 2023-03-12 19:05:39.897 │       1 │
+│ devankoshal │ user     │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID575 │   7478 │ emerg    │ 2023-03-12 19:05:40.896 │       1 │
+│ meln1ks     │ local2   │ up.de      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID113 │   6786 │ alert    │ 2023-03-12 19:05:41.904 │       2 │
+│ jesseddy    │ local0   │ random.de  │ Maybe we just shouldn't use computers
+          │ ID255 │   2239 │ crit     │ 2023-03-12 19:05:42.896 │       2 │
+│ jesseddy    │ local1   │ up.org     │ Take a breath, let it go, walk away
+          │ ID452 │   2205 │ info     │ 2023-03-12 19:05:43.896 │       2 │
+│ meln1ks     │ ntp      │ some.us    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID848 │   5217 │ err      │ 2023-03-12 19:05:44.903 │       1 │
+│ benefritz   │ lpr      │ for.com    │ We're gonna need a bigger boat
+          │ ID408 │   4859 │ emerg    │ 2023-03-12 19:05:45.896 │       1 │
+│ shaneIxD    │ local3   │ random.us  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID47  │   5016 │ emerg    │ 2023-03-12 19:05:46.904 │       2 │
+│ devankoshal │ local2   │ random.de  │ There's a breach in the warp core, captain
+          │ ID242 │   7461 │ crit     │ 2023-03-12 19:05:47.897 │       2 │
+│ benefritz   │ news     │ for.us     │ Pretty pretty pretty good
+          │ ID229 │   1370 │ warning  │ 2023-03-12 19:05:48.896 │       2 │
+│ shaneIxD    │ auth     │ we.com     │ There's a breach in the warp core, captain
+          │ ID312 │    964 │ crit     │ 2023-03-12 19:05:49.896 │       1 │
+│ Karimmove   │ local4   │ make.org   │ Take a breath, let it go, walk away
+          │ ID586 │   1996 │ debug    │ 2023-03-12 19:05:50.896 │       2 │
+│ benefritz   │ lpr      │ make.us    │ Maybe we just shouldn't use computers
+          │ ID160 │   1039 │ crit     │ 2023-03-12 19:05:51.895 │       2 │
+│ shaneIxD    │ local1   │ random.us  │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID294 │    896 │ err      │ 2023-03-12 19:05:52.896 │       2 │
+│ shaneIxD    │ local7   │ for.net    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID923 │   8985 │ err      │ 2023-03-12 19:05:53.896 │       2 │
+│ shaneIxD    │ ftp      │ make.com   │ Maybe we just shouldn't use computers
+          │ ID424 │   4443 │ info     │ 2023-03-12 19:05:54.896 │       1 │
+│ shaneIxD    │ clockd   │ some.us    │ Take a breath, let it go, walk away
+          │ ID728 │   6614 │ crit     │ 2023-03-12 19:05:55.913 │       1 │
+│ shaneIxD    │ local5   │ names.us   │ We're gonna need a bigger boat
+          │ ID170 │   4682 │ notice   │ 2023-03-12 19:05:56.932 │       2 │
+│ shaneIxD    │ mail     │ random.com │ There's a breach in the warp core, captain
+          │ ID889 │   4422 │ debug    │ 2023-03-12 19:05:57.896 │       1 │
+│ devankoshal │ clockd   │ for.com    │ There's a breach in the warp core, captain
+          │ ID906 │   6828 │ info     │ 2023-03-12 19:05:58.929 │       2 │
+│ benefritz   │ local0   │ we.de      │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID277 │   6479 │ info     │ 2023-03-12 19:05:59.896 │       1 │
+│ jesseddy    │ auth     │ random.de  │ There's a breach in the warp core, captain
+          │ ID472 │   8756 │ info     │ 2023-03-12 19:06:00.896 │       1 │
+│ jesseddy    │ local3   │ random.de  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID565 │   1377 │ info     │ 2023-03-12 19:06:01.896 │       1 │
+│ ahmadajmi   │ mail     │ up.com     │ There's a breach in the warp core, captain
+          │ ID29  │   3345 │ alert    │ 2023-03-12 19:06:02.896 │       2 │
+│ jesseddy    │ clockd   │ make.us    │ You're not gonna believe what just happened
+          │ ID970 │   1056 │ crit     │ 2023-03-12 19:06:03.897 │       1 │
+│ devankoshal │ authpriv │ some.us    │ Pretty pretty pretty good
+          │ ID736 │   8826 │ info     │ 2023-03-12 19:06:04.896 │       2 │
+│ meln1ks     │ local3   │ we.de      │ Pretty pretty pretty good
+          │ ID990 │   4630 │ debug    │ 2023-03-12 19:06:05.896 │       1 │
+│ devankoshal │ local3   │ some.de    │ You're not gonna believe what just happened
+          │ ID986 │   8054 │ emerg    │ 2023-03-12 19:06:06.896 │       1 │
+│ meln1ks     │ local0   │ random.org │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID893 │   1912 │ crit     │ 2023-03-12 19:06:07.896 │       1 │
+│ shaneIxD    │ local1   │ we.us      │ Take a breath, let it go, walk away
+          │ ID556 │   9461 │ notice   │ 2023-03-12 19:06:08.896 │       2 │
+│ benefritz   │ alert    │ up.com     │ There's a breach in the warp core, captain
+          │ ID274 │   6023 │ debug    │ 2023-03-12 19:06:09.897 │       2 │
+│ devankoshal │ news     │ for.com    │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID744 │   5336 │ debug    │ 2023-03-12 19:06:10.940 │       1 │
+│ benefritz   │ daemon   │ names.us   │ Pretty pretty pretty good
+          │ ID319 │    506 │ err      │ 2023-03-12 19:06:11.896 │       2 │
+│ meln1ks     │ auth     │ make.us    │ We're gonna need a bigger boat
+          │ ID519 │   9069 │ debug    │ 2023-03-12 19:06:12.896 │       1 │
+│ Karimmove   │ local7   │ random.net │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID372 │   5234 │ alert    │ 2023-03-12 19:06:13.903 │       2 │
+│ Karimmove   │ local5   │ we.de      │ #hugops to everyone who has to deal with this
+          │ ID386 │   2800 │ err      │ 2023-03-12 19:06:14.895 │       1 │
+│ benefritz   │ cron     │ names.com  │ There's a breach in the warp core, captain
+          │ ID562 │   5994 │ alert    │ 2023-03-12 19:06:15.896 │       2 │
+│ Karimmove   │ local2   │ names.net  │ Take a breath, let it go, walk away
+          │ ID416 │   4441 │ info     │ 2023-03-12 19:06:16.896 │       1 │
+│ meln1ks     │ daemon   │ random.com │ We're gonna need a bigger boat
+          │ ID846 │   2016 │ crit     │ 2023-03-12 19:06:17.896 │       2 │
+│ ahmadajmi   │ audit    │ for.com    │ #hugops to everyone who has to deal with this
+          │ ID603 │   9915 │ debug    │ 2023-03-12 19:06:18.898 │       2 │
+│ Karimmove   │ user     │ up.com     │ #hugops to everyone who has to deal with this
+          │ ID329 │   3854 │ err      │ 2023-03-12 19:06:19.896 │       1 │
+│ benefritz   │ authpriv │ up.net     │ Maybe we just shouldn't use computers
+          │ ID966 │   7425 │ info     │ 2023-03-12 19:06:20.896 │       1 │
+│ jesseddy    │ mail     │ names.com  │ There's a breach in the warp core, captain
+          │ ID315 │   2060 │ debug    │ 2023-03-12 19:06:21.899 │       2 │
+│ benefritz   │ local4   │ we.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID142 │   8012 │ warning  │ 2023-03-12 19:06:22.896 │       2 │
+│ devankoshal │ local7   │ random.net │ You're not gonna believe what just happened
+          │ ID594 │   2146 │ emerg    │ 2023-03-12 19:06:23.896 │       2 │
+│ jesseddy    │ authpriv │ up.org     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID285 │   6096 │ crit     │ 2023-03-12 19:06:24.897 │       2 │
+│ jesseddy    │ local4   │ for.de     │ There's a breach in the warp core, captain
+          │ ID124 │   3849 │ crit     │ 2023-03-12 19:06:25.896 │       1 │
+│ benefritz   │ lpr      │ random.org │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID615 │   5044 │ warning  │ 2023-03-12 19:06:26.898 │       2 │
+│ Karimmove   │ local3   │ names.com  │ Take a breath, let it go, walk away
+          │ ID877 │   1651 │ err      │ 2023-03-12 19:06:27.896 │       2 │
+│ devankoshal │ local0   │ up.us      │ We're gonna need a bigger boat
+          │ ID434 │    549 │ err      │ 2023-03-12 19:06:28.925 │       2 │
+│ shaneIxD    │ audit    │ random.org │ You're not gonna believe what just happened
+          │ ID736 │   6900 │ emerg    │ 2023-03-12 19:06:29.923 │       2 │
+│ benefritz   │ local2   │ names.de   │ Pretty pretty pretty good
+          │ ID49  │   5529 │ info     │ 2023-03-12 19:06:30.896 │       1 │
+│ jesseddy    │ ftp      │ for.us     │ There's a breach in the warp core, captain
+          │ ID548 │   3290 │ debug    │ 2023-03-12 19:06:31.932 │       2 │
+│ jesseddy    │ audit    │ names.de   │ #hugops to everyone who has to deal with this
+          │ ID754 │   1930 │ warning  │ 2023-03-12 19:06:32.921 │       1 │
+│ devankoshal │ local0   │ we.de      │ We're gonna need a bigger boat
+          │ ID806 │   3732 │ err      │ 2023-03-12 19:06:33.896 │       2 │
+│ ahmadajmi   │ user     │ make.net   │ We're gonna need a bigger boat
+          │ ID522 │   8094 │ crit     │ 2023-03-12 19:06:34.902 │       1 │
+│ Karimmove   │ local3   │ random.de  │ There's a breach in the warp core, captain
+          │ ID997 │   3076 │ notice   │ 2023-03-12 19:06:35.896 │       2 │
+│ ahmadajmi   │ local0   │ names.com  │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID92  │   2192 │ crit     │ 2023-03-12 19:06:36.896 │       1 │
+│ benefritz   │ authpriv │ make.com   │ We're gonna need a bigger boat
+          │ ID193 │   9329 │ notice   │ 2023-03-12 19:06:37.896 │       2 │
+│ devankoshal │ local3   │ for.de     │ Maybe we just shouldn't use computers
+          │ ID664 │    302 │ crit     │ 2023-03-12 19:06:38.896 │       2 │
+│ devankoshal │ mail     │ some.net   │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID752 │   8432 │ info     │ 2023-03-12 19:06:39.896 │       2 │
+│ benefritz   │ lpr      │ we.net     │ Take a breath, let it go, walk away
+          │ ID394 │   4128 │ debug    │ 2023-03-12 19:06:40.896 │       2 │
+│ Karimmove   │ alert    │ make.org   │ There's a breach in the warp core, captain
+          │ ID383 │   1427 │ warning  │ 2023-03-12 19:06:41.896 │       1 │
+│ jesseddy    │ syslog   │ names.de   │ #hugops to everyone who has to deal with this
+          │ ID387 │   4233 │ err      │ 2023-03-12 19:06:42.906 │       1 │
+│ jesseddy    │ local5   │ make.com   │ #hugops to everyone who has to deal with this
+          │ ID803 │    891 │ debug    │ 2023-03-12 19:06:43.896 │       2 │
+│ jesseddy    │ local7   │ names.de   │ We're gonna need a bigger boat
+          │ ID433 │   1944 │ notice   │ 2023-03-12 19:06:44.896 │       2 │
+│ ahmadajmi   │ ftp      │ up.net     │ Maybe we just shouldn't use computers
+          │ ID958 │   5461 │ notice   │ 2023-03-12 19:06:45.896 │       2 │
+│ benefritz   │ audit    │ we.us      │ #hugops to everyone who has to deal with this
+          │ ID65  │   8985 │ notice   │ 2023-03-12 19:06:46.896 │       1 │
+│ jesseddy    │ uucp     │ for.com    │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID181 │   3215 │ crit     │ 2023-03-12 19:06:47.896 │       2 │
+│ meln1ks     │ local5   │ make.us    │ We're gonna need a bigger boat
+          │ ID494 │   1226 │ err      │ 2023-03-12 19:06:48.901 │       1 │
+│ Karimmove   │ uucp     │ names.us   │ Pretty pretty pretty good
+          │ ID692 │   1965 │ notice   │ 2023-03-12 19:06:49.896 │       1 │
+│ jesseddy    │ local1   │ up.com     │ Great Scott! We're never gonna reach 88 mph with the flux capacitor in its current state! │ ID683 │    354 │ emerg    │ 2023-03-12 19:06:50.902 │       1 │
+│ Karimmove   │ auth     │ random.de  │ There's a breach in the warp core, captain
+          │ ID812 │   9448 │ debug    │ 2023-03-12 19:06:51.897 │       1 │
+│ shaneIxD    │ syslog   │ random.net │ Take a breath, let it go, walk away
+          │ ID429 │   3240 │ err      │ 2023-03-12 19:06:52.896 │       2 │
+│ benefritz   │ ftp      │ we.us      │ You're not gonna believe what just happened
+          │ ID302 │   1731 │ err      │ 2023-03-12 19:06:53.896 │       1 │
+│ shaneIxD    │ clockd   │ make.de    │ Pretty pretty pretty good
+          │ ID685 │   3200 │ err      │ 2023-03-12 19:06:54.898 │       2 │
+│ benefritz   │ local3   │ up.net     │ A bug was encountered but not in Vector, which doesn't have bugs
+          │ ID512 │   8192 │ crit     │ 2023-03-12 19:06:55.896 │       1 │
+│ meln1ks     │ alert    │ some.us    │ There's a breach in the warp core, captain
+          │ ID475 │   7905 │ info     │ 2023-03-12 19:06:56.895 │       2 │
+│ shaneIxD    │ local0   │ random.com │ You're not gonna believe what just happened
+          │ ID101 │   3357 │ emerg    │ 2023-03-12 19:06:57.897 │       1 │
+│ benefritz   │ user     │ make.com   │ We're gonna need a bigger boat
+          │ ID163 │    765 │ info     │ 2023-03-12 19:06:58.904 │       1 │
+│ Karimmove   │ ftp      │ for.org    │ Maybe we just shouldn't use computers
+          │ ID267 │    315 │ info     │ 2023-03-12 19:06:59.896 │       1 │
+└─────────────┴──────────┴────────────┴───────────────────────────────────────────────────────────────────────────────────────────┴───────┴────────┴──────────┴─────────────────────────┴─────────┘
+
+986 rows in set. Elapsed: 0.010 sec.
