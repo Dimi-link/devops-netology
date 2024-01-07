@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: app-deploy
+  name: app-deploy
+  namespace: default
+spec:
+  containers:
+  - name: multitool
+    image: wbitt/network-multitool
+    ports:
+    - containerPort: 8080

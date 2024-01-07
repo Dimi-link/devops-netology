@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: waiting-deploy
+  labels:
+    app: waiting-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: waiting-deploy
+  template:
+    metadata:
+      labels:
+        app: waiting-deploy
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.21
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+      initContainers:
+        - name: init-waiting-startupsvc
+          image: busybox:1.28
+          command: ['sh', '-c', "until nslookup startupsvc.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for startupsvc; sleep 2; done"]
