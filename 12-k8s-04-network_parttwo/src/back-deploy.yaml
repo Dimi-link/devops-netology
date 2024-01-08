@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-deploy
+  labels:
+    app: back-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: back-deploy
+  template:
+    metadata:
+      labels:
+        app: back-deploy
+    spec:
+      containers:
+      - image: wbitt/network-multitool
+        name: multitool
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+          name: backend
