@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: store-deploy
+  labels:
+    app: store-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: store-deploy
+  template:
+    metadata:
+      labels:
+        app: store-deploy
+    spec:
+      containers:
+      - image: busybox
+        name: busybox
+        command: ['sh', '-c', 'while true; do echo Store it >> /busybox/1.txt; sleep 5; done']
+        volumeMounts:
+          - mountPath: /busybox
+            name: first-volume
+        imagePullPolicy: IfNotPresent
+      - image: wbitt/network-multitool
+        name: multitool
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - mountPath: /multitool
+            name: first-volume
+        imagePullPolicy: IfNotPresent
+      volumes:
+        - name: first-volume
+          hostPath:
+            path: /k8s_volume
