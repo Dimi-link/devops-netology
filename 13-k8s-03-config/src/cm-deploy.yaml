@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cm-deploy
+  labels:
+    app: cm-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cm-deploy
+  template:
+    metadata:
+      labels:
+        app: cm-deploy
+    spec:
+      containers:
+      - image: nginx:1.21
+        name: nginx
+        imagePullPolicy: IfNotPresent
+      - image: wbitt/network-multitool
+        name: multitool
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+          - name: cm
+            mountPath: /usr/share/nginx/html     
+        env:
+          - name: HTTP_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: cm
+                key: key1
+          - name: HTTPS_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: cm
+                key: key2
+      volumes:
+      - name: cm
+        configMap:
+          name: cm          

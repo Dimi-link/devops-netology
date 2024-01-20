@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: https-cm-deploy
+  labels:
+    app: https-cm-deploy
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: https-cm-deploy
+  template:
+    metadata:
+      labels:
+        app: https-cm-deploy
+    spec:
+      containers:
+      - image: nginx:1.21
+        name: nginx
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+          - name: https-cm
+            mountPath: /usr/share/nginx/html
+      volumes:
+      - name: https-cm
+        configMap:
+          name: https-cm

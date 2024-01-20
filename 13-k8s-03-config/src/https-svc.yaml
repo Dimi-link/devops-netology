@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: https-svc
+  namespace: default
+spec:
+  selector:
+    app: https-cm-deploy
+  ports:
+  - name: nginx
+    port: 80
+    protocol: TCP
+    nodePort: 30080
+  type: NodePort
