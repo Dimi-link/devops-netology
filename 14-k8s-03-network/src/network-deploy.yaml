@@ -1,0 +1,99 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: app
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: network-multitool-1
+        image: wbitt/network-multitool
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: app
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: network-multitool-2
+        image: wbitt/network-multitool
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cache
+  namespace: app
+  labels:
+    app: cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cache
+  template:
+    metadata:
+      labels:
+        app: cache
+    spec:
+      containers:
+      - name: network-multitool-3
+        image: wbitt/network-multitool
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: app
+  name: frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+  - port: 80
+    name: frontend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: app
+  name: backend
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 80
+    name: backend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: app
+  name: cache
+spec:
+  selector:
+    app: cache
+  ports:
+  - port: 80
+    name: cache
