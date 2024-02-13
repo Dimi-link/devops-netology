@@ -1,0 +1,12 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+    - ssh-rsa ABABB3NzaC1yc2EAAAADAQABAAABgQCifIvkzxGF4JXp6CRQOi624dg4Y5lRDCR9870uicWKfZggAMqrnQa+Qls4UEY+PoUyEqQfdCZQgWRSvkUo/HIA3/iCryhfUAlxMMFWUayFF6LWx/z8EMBWSUmVjhMYWr13RqeTMuAEwnkwwWwMe2rEwv8F0xZurDBUM4n8T4Dka8rnSOngtorTeJKb05ejpX7ljDjrICPYnvTLiwwdPRls/D4mYHz4h5KhsON6sIX0iIb/cZ9l4t3keR5z7agz2P7UQVjJoRc8A8+V65+yfmNEiHiy5bxqUeYVBLj4gtNOq0RWX+4iSxROtoZOasG9P0oq8PjA1wbX8gjGcj5fGtlBPKpocxRs2DnIUdUh5I9cOopfOHo2dCaW2pUc2aZICajrAtLoSVnNDg29tS2heIdcp1vkObP91sTMm1/Uip+0R36KIaUZzzAEON1TJwq/Csn76zOLVxan8om8UvNbfmBPSZICsUt8znV822Nvow7KrHLmMsZbvs3IXc8SwrkJ6sc= dimi@DESKTOP-K8RTBSS
+write_files:
+- content: |
+    <html><body><img src="http://1.dimi.link.website.yandexcloud.net/"></body></html>
+  path: /var/www/html/index.html
+  permissions: '0644'
